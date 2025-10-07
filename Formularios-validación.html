@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios-Validación de datos</title>
+</head>
+<body>
+    <form action="post">
+        <!--Ejercicio 1-->
+        <label>Introduce tres letras
+            <input type="text" pattern="^[A-Za-z]{3}$" >
+        </label>
+        <br><br>
+        
+        <!--Ejercicio 2-->
+        <label>Contraseña de 6 caracteres
+            <input type="password" pattern=".{6,}" >
+        </label>
+        <br><br>
+
+        <!--Ejercicio 3-->
+        <label>Nombre de usuario con tres minusculas al principio y un numero de dos digitos al final.
+            <input type="text" pattern="[a-z]{3,10}[0-9]{2,9}" >
+        </label>
+        <br><br>
+
+        <!--Ejercicio 4-->
+        <label>Contraseña mayúsculas, minúsculas, numero y caracteres !?-
+            <input type="password" pattern="[A-Za-z0-9!\?-]{8,12}" >
+        </label>
+        <br><br>
+
+        <!--Ejercicio 5-->
+        <label>Nombre usuario
+            <input type="text" pattern="[A-Za-z0-9]{5,40}">
+        </label>
+        <br><br>
+
+        <!--Ejercicio 6-->
+        <label>Modelo de coche
+            <input type="text" pattern="A[1,3,4,15]">
+        </label>
+        <br><br>
+
+        <!--Ejercicio 7-->
+        <label>Carga de una patente
+            <input type="text" pattern=".{3}[0-9]{3}">
+        </label>
+        <br><br>
+
+        <!--Ejercicio 8-->
+        <label>Ingreso de URL
+            <input type="text" pattern="(http|https)//.*">
+        </label>
+        <br><br>
+
+        <!--Ejercicio 9-->
+        <label>Numero entero positivo
+            <input type="text" pattern="[1-9][0-9]*" >
+        </label>
+        <br><br>
+
+        <!--Ejercicio 10-->
+        <label>E-mail
+            <input type="text" pattern="[a-zA-Z0-9.]@iesiliberis\.com" placeholder="ana@iesiliberis.com" >
+        </label>
+        <br><br>  
+
+        <!--Ejercicio 11-->
+        <label>Codigo postal
+            <input type="text" pattern="\d{5}">
+        </label>
+        <br><br>
+
+        <!--Ejercicio 12-->
+        <label>Fecha en formato DD/MM/AAAA
+            <input type="text" pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/([0-9]{4})" placeholder="DD/MM/AAAA">
+        </label>
+        <br><br>
+
+        <!--Ejercicio 13-->
+        <label>Numero de teléfono
+            <input type="text" pattern="\d{9}">
+        </label>
+        <br><br>
+
+        <!--Ejercicio 14-->
+        <label>Contraseña segura
+            <input type="password" pattern="(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}">
+        </label>
+        <br><br>
+
+        <!--Ejercicio 15-->
+        <label>Número de targeta de crédito
+            <input type="text" pattern="[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}-[A-Za-z0-9]{4}">
+        </label>
+        <br><br>
+
+        <!--Ejercicio 16-->
+        <label>Código de país
+            <input type="text" pattern="[A-Z]{2}">
+        </label>
+        <br><br>
+
+        <!--Ejercicio 17-->
+        <label>Hora en formato HH:MM
+            <input type="text" pattern="([01][0-9]|2[0-3]):[0-5][0-9]">
+        </label>
+        <br><br>
+
+        <!--Ejercicio 18-->
+        <label>Código de producto
+            <input type="text" pattern="[A-Za-z]{2}-[0-9]{4}">
+        </label>
+        <br><br>
+
+        <!--Ejercicio 19-->
+        <label>Código de descuento válido
+            <input type="text" pattern="[A-Za-z0-9]{6}">
+        </label>
+        <br><br>
+
+        <input type="submit" name="Enviar">
+    </form>
+    
+</body>
+</html>
