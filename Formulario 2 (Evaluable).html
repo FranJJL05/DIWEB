@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoja de Inscripción - Grado Superior</title>
+    <style>
+        :root {
+            --color-personal: #63594d;
+            --color-acceso: #b18272;
+            --color-documentos: #c2b291;
+            --color-personaliza: #d6e4c3;
+            --color-otros: #eae3d1;
+        }
+
+        body {
+            background-color: #fafafa;
+            color: black;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        .section {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+        }
+
+        .section-title {
+            position: relative;
+            top: -30px;
+            background-color: var(--color-otros);
+            border: 1px solid black;
+            color: black;
+            display: inline-block;
+            padding: 2px 8px;
+        }
+
+        .section-personales {
+            background-color: var(--color-personal);
+            color: white;
+        }
+
+        .section-acceso {
+            background-color: var(--color-acceso);
+        }
+
+        .section-documentos {
+            background-color: var(--color-documentos);
+        }
+
+        .section-personaliza {
+            background-color: var(--color-personaliza);
+        }
+
+        .section-otros-datos {
+            background-color: var(--color-otros);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .apartados-individuales {
+            flex: 1 1 30%;
+            margin-bottom: 10px;
+        }
+
+        .apartados-individuales label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        .radio-option {
+            margin-bottom: 5px;
+        }
+
+        .radio-option label {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HOJA DE INSCRIPCIÓN</h1>
+    <h2>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+
+    <form action="" method="POST">
+        <!--Sección Datos Personales-->
+        <section class="section section-personales">
+            <div class="section-title">Datos Personales</div>
+
+            <div class="container">
+                <div class="apartados-individuales">
+                    <label for="nombre">Nombre (*):</label>
+                    <input type="text" id="nombre" name="nombre" required pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ]+"
+                        title="Solo letras." />
+                </div>
+                <div class="apartados-individuales">
+                    <label for="apellidos">Apellidos (*):</label>
+                    <input type="text" id="apellidos" name="apellidos" required pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ]+"
+                        title="Solo letras." />
+                </div>
+                <div class="apartados-individuales">
+                    <label for="dni">DNI (*):</label>
+                    <input type="text" id="dni" name="dni" required pattern="^\d{8}[A-Z]$" />
+                </div>
+
+                <div class="apartados-individuales">
+                    <label for="localidad">Localidad de Nacimiento:</label>
+                    <input type="text" id="localidad" name="localidad" />
+                </div>
+                <div class="apartados-individuales">
+                    <label for="provincia">Provincia:</label>
+                    <select id="provincia" name="provincia">
+                        <optgroup label="Andalucía">
+                            <option value="Huelva">Huelva</option>
+                            <option value="Sevilla">Sevilla</option>
+                            <option value="Cadiz">Cádiz</option>
+                            <option value="Cordoba">Córdoba</option>
+                            <option value="Jaen">Jaén</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Malaga">Málaga</option>
+                            <option value="Almeria">Almería</option>
+                        </optgroup>
+                        <optgroup label="Castilla y León">
+                            <option value="Avila">Ávila</option>
+                            <option value="Burgos">Burgos</option>
+                            <option value="Leon">León</option>
+                            <option value="Palencia">Palencia</option>
+                            <option value="Segovia">Segovia</option>
+                            <option value="Soria">Soria</option>
+                            <option value="Salamanca">Salamanca</option>
+                            <option value="Valladolid">Valladolid</option>
+                            <option value="Zamora">Zamora</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="apartados-individuales">
+                    <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" pattern="\d{4}-\d{2}-\d{2}"
+                        title="Formato: dd/mm/aaaa" placeholder="dd/mm/aaaa" />
+                </div>
+
+                <div class="apartados-individuales">
+                    <label for="direccion">Dirección (*):</label>
+                    <input type="text" id="direccion" name="direccion" required />
+                </div>
+                <div class="apartados-individuales">
+                    <label for="codigoPostal">Código Postal:</label>
+                    <input type="text" id="codigoPostal" name="codigoPostal" pattern="^\d{5}$" title="5 dígitos." />
+                </div>
+
+                <div class="apartados-individuales">
+                    <label for="email">Email (*):</label>
+                    <input type="email" id="email" name="email" required
+                        pattern="^[a-zA-Z]+[a-zA-Z0-9._-]*@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"
+                        placeholder="usuario@gmail.com" />
+                </div>
+
+                <div class="apartados-individuales">
+                    <label for="password">Contraseña (*):</label>
+                    <input type="password" id="password" name="password" required pattern="^(?=.*[A-Z])(?=.*\d).{8,}$"/>
+                </div>
+
+                <div class="apartados-individuales">
+                    <label for="telefono">Teléfono (*):</label>
+                    <input type="tel" id="telefono" name="telefono" required pattern="^\d{9}$" title="9 dígitos." />
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Forma de acceso-->
+        <section class="section section-acceso">
+            <div class="section-title">Forma de Acceso</div>
+
+            <div class="container">
+                <div class="apartados-individuales">
+                    <div class="radio-group-container">
+                        <div class="radio-option">
+                            <input type="radio" id="acceso_directo" name="forma_acceso" value="directo" required />
+                            <label for="acceso_directo">Directo</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="acceso_bach" name="forma_acceso" value="bachillerato" />
+                            <label for="acceso_bach">Bachillerato Log Modalidad</label>
+                            <input type="text" id="acceso_bach" name="acceso_bach"
+                                style="width: 190px; display: inline-block; height: 2rem;" />
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="acceso_exp" name="forma_acceso" value="experimental" />
+                            <label for="acceso_exp">Experimental</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="acceso_cou" name="forma_acceso" value="cou" />
+                            <label for="acceso_cou">COU Opción</label>
+                            <input type="text" id="otros_acceso_esp" name="otros_acceso_esp"
+                                style="width: 190px; display: inline-block; height: 2rem;"/>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="acceso_fp2" name="forma_acceso" value="fp2" />
+                            <label for="acceso_fp2">FP2</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="acceso_otros" name="forma_acceso" value="otros" />
+                            <label for="acceso_otros">Otros (especifique):</label>
+                            <input type="text" id="otros_acceso_esp" name="otros_acceso_esp"
+                                style="width: 190px; display: inline-block; height: 2rem;"/>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="acceso_prueba" name="forma_acceso" value="prueba_libre" />
+                            <label for="acceso_prueba">Prueba Libre</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Sección Documentos Adjuntados-->
+        <section class="section section-documentos">
+            <div class="section-title">Documentos Adjuntos</div>
+            <div class="apartados-individuales">
+                <div class="radio-option">
+                    <input type="checkbox" id="doc_dni" name="doc_dni" value="si" />
+                    <label for="doc_dni">Fotocopia DNI</label>
+                </div>
+                <div class="radio-option">
+                    <input type="checkbox" id="doc_cert" name="doc_cert" value="si" />
+                    <label for="doc_cert">Certificado Académico</label>
+                </div>
+                <div class="radio-option">
+                    <input type="checkbox" id="doc_otros" name="doc_otros" value="si" />
+                    <label for="doc_otros">Otros documentos (especifique):</label>
+                    <input type="text" id="otros_acceso_esp" name="otros_acceso_esp"
+                                style="width: 190px; display: inline-block; height: 2rem;"/>
+                </div>
+            </div>
+            <div>
+                <label for="archivos">Adjuntar documentos (puedes subir más de un documento):</label>
+                <input type="file" id="archivos" name="archivos[]" multiple />
+            </div>
+        </section>
+
+        <!--Sección personaliza-->
+        <section class="section section-personaliza">
+            <div class="section-title">Personaliza</div>
+            <div class="container">
+                <div class="apartados-individuales">
+                    <label for="codigoPersonalizado">Código Personalizado:</label>
+                    <input type="text" id="codigoPersonalizado" name="codigoPersonalizado" pattern="^[A-Za-z]{3}-\d{4}$"
+                        title="3 letras - 4 dígitos (ej: ABC-1234)." />
+                </div>
+
+                <div class="apartados-individuales">
+                    <label for="grupoCurso">Grupo del Curso:</label>
+                    <input type="text" id="grupoCurso" name="grupoCurso" pattern="^(A|B|AA|BB|ABA)$"
+                        title="Valores: A, B, AA, BB o ABA." />
+                </div>
+
+                <div class="apartados-individuales">
+                    <label for="idiomaCertificado">Idioma Certificado:</label>
+                    <select id="idiomaCertificado" name="idiomaCertificado">
+                        <option value="Ingles">Inglés</option>
+                        <option value="Frances">Francés</option>
+                        <option value="Aleman">Alemán</option>
+                        <option value="Portugues">Portugués</option>
+                        <option value="Italiano">Italiano</option>
+                        <option value="Japones">Japonés</option>
+                    </select>
+                </div>
+
+                <div class="apartados-individuales">
+                    <label for="certificacionIdiomas">Certificación en idiomas:</label>
+                    <input type="text" id="certificacionIdiomas" name="certificacionIdiomas"
+                        pattern="^(A[12]|B[12]|C[12])$" title="Valores: A1, A2, B1, B2, C1, C2." />
+                </div>
+            </div>
+        </section>
+
+        <!--Sección Otros Datos-->
+        <section class="section section-otros-datos">
+            <div class="section-title">Otros Datos</div>
+            <div>
+                <label for="comentarios">Indique cualquier otra cosa a tener en cuenta:</label>
+                <textarea id="comentarios" name="comentarios" rows="3" placeholder="Déjanos tu comentario"></textarea>
+            </div>
+        </section>
+
+        <!--Botones-->
+        <div>
+            <button type="submit">Enviar Solicitud</button>
+
+            <button type="reset">Resetear Formulario</button>
+        </div>
+    </form>
+</body>
+
+</html>
