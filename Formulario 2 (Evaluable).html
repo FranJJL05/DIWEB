@@ -99,6 +99,10 @@
         .radio-option label {
             display: inline;
         }
+
+        .apartados-directo {
+            margin-left: 50px;
+        }
     </style>
 </head>
 
@@ -181,12 +185,13 @@
 
                 <div class="apartados-individuales">
                     <label for="password">Contraseña (*):</label>
-                    <input type="password" id="password" name="password" required pattern="^(?=.*[A-Z])(?=.*\d).{8,}$"/>
+                    <input type="password" id="password" name="password" required
+                        pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" />
                 </div>
 
                 <div class="apartados-individuales">
                     <label for="telefono">Teléfono (*):</label>
-                    <input type="tel" id="telefono" name="telefono" required pattern="^\d{9}$" title="9 dígitos." />
+                    <input type="tel" id="telefono" name="telefono" required pattern="\d{9}" title="9 dígitos." />
                 </div>
             </div>
         </section>
@@ -197,36 +202,36 @@
 
             <div class="container">
                 <div class="apartados-individuales">
-                    <div class="radio-group-container">
+                    <div>
                         <div class="radio-option">
                             <input type="radio" id="acceso_directo" name="forma_acceso" value="directo" required />
                             <label for="acceso_directo">Directo</label>
                         </div>
-                        <div class="radio-option">
+                        <div class="radio-option apartados-directo">
                             <input type="radio" id="acceso_bach" name="forma_acceso" value="bachillerato" />
                             <label for="acceso_bach">Bachillerato Log Modalidad</label>
                             <input type="text" id="acceso_bach" name="acceso_bach"
                                 style="width: 190px; display: inline-block; height: 2rem;" />
                         </div>
-                        <div class="radio-option">
+                        <div class="radio-option apartados-directo">
                             <input type="radio" id="acceso_exp" name="forma_acceso" value="experimental" />
                             <label for="acceso_exp">Experimental</label>
                         </div>
-                        <div class="radio-option">
+                        <div class="radio-option apartados-directo">
                             <input type="radio" id="acceso_cou" name="forma_acceso" value="cou" />
                             <label for="acceso_cou">COU Opción</label>
                             <input type="text" id="otros_acceso_esp" name="otros_acceso_esp"
-                                style="width: 190px; display: inline-block; height: 2rem;"/>
+                                style="width: 190px; display: inline-block; height: 2rem;" />
                         </div>
-                        <div class="radio-option">
+                        <div class="radio-option apartados-directo">
                             <input type="radio" id="acceso_fp2" name="forma_acceso" value="fp2" />
                             <label for="acceso_fp2">FP2</label>
                         </div>
-                        <div class="radio-option">
+                        <div class="radio-option apartados-directo">
                             <input type="radio" id="acceso_otros" name="forma_acceso" value="otros" />
                             <label for="acceso_otros">Otros (especifique):</label>
                             <input type="text" id="otros_acceso_esp" name="otros_acceso_esp"
-                                style="width: 190px; display: inline-block; height: 2rem;"/>
+                                style="width: 190px; display: inline-block; height: 2rem;" />
                         </div>
                         <div class="radio-option">
                             <input type="radio" id="acceso_prueba" name="forma_acceso" value="prueba_libre" />
@@ -253,7 +258,7 @@
                     <input type="checkbox" id="doc_otros" name="doc_otros" value="si" />
                     <label for="doc_otros">Otros documentos (especifique):</label>
                     <input type="text" id="otros_acceso_esp" name="otros_acceso_esp"
-                                style="width: 190px; display: inline-block; height: 2rem;"/>
+                        style="width: 190px; display: inline-block; height: 2rem;" />
                 </div>
             </div>
             <div>
