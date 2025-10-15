@@ -1,0 +1,60 @@
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: left;
+    gap: 1rem;
+    list-style: none;
+    margin-left: 10px;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+main {
+    padding: 20px;
+}
+
+section::before{
+    content: "Título del artículo:";
+    font-weight: bold;
+}
+
+section::after{
+    content: "- Fin del artículo";
+}
+
+h2::first-letter {
+    color: blue;
+}
+
+p::before {
+    content: "*.👌 ";
+}
+
+p::after {
+    content: " - Aloja more don 👌";
+    color: red;
+}
+
+
+p::selection {
+    background-color: yellow;
+}
+
+
+p::first-line {
+    color: green;
+}
