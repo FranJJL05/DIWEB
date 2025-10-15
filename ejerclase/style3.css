@@ -1,0 +1,29 @@
+body{
+    counter-reset: numero_capitulo;
+}
+
+h2::before{
+    counter-increment: numero_capitulo;
+    content: "Capítulo " counter(numero_capitulo) ". ";
+    color: blue;
+}
+
+h2{
+    color: midnightblue;
+    counter-reset: sub;
+}
+
+h3::before{
+    counter-increment: sub;
+    content: counters(numero_capitulo, ". ") "." counter(sub) " - ";
+
+}
+
+h3{
+    counter-reset: subsub;
+}
+
+h4::before{
+    counter-increment: subsub;
+    content: counters(numero_capitulo,".") "." counter(sub) "." counter(subsub) " - ";
+}

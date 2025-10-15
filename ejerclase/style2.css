@@ -1,0 +1,19 @@
+body{
+    counter-reset: numero_unidad;
+}
+
+h2::before{
+    counter-increment: numero_unidad;
+    content: "Unidad " counter(numero_unidad, upper-roman) ": ";
+    color: blue;
+}
+
+h2{
+    counter-reset: letras;
+    color: midnightblue;
+}
+
+h3::before{
+    counter-increment: letras;
+    content: counter(letras, lower-alpha) ") ";
+}
