@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style>
+        input:nth-child(2){
+            background-color: lightgreen;
+        }
+
+        input{
+            background-color: red;
+        }
+
+        input:nth-child(2):hover{
+            background-color: lightyellow;
+        }
+
+        input:nth-child(2):focus{
+            background-color: lightblue;
+        }
+
+        input[type="radio"]:checked + label {
+            font-style: italic;
+        }
+
+        input[type="checkbox"]:checked + label {
+            background-color: yellow;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="post">
+        <label for="nombre">Su nombre:</label>
+        <input type="text" id="nombre">
+        <br><br>
+        <label for="edad">Su edad:</label>
+        <input type="number" id="edad">
+        <br><br>
+        <input type="radio" id="hombre" name="genero" value="hombre">
+        <label for="hombre">Hombre</label><br>
+
+        <input type="radio" id="mujer" name="genero" value="mujer">
+        <label for="mujer">Mujer</label>
+
+        <br><br>
+        <input type="checkbox" id="deAcuerdo">
+        <label for="deAcuerdo">Estoy de acuerdo con las condiciones de uso</label>
+    </form>
+</body>
+
+</html>

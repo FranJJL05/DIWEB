@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        nav a:visited {
+            color: purple;
+        }
+        
+        section:target h2 {
+            color: green;
+            padding-left: 15px;
+        }
+
+        section:target h2::before {
+            content: ">"; 
+            color: green;
+            font-weight: bold;
+            margin-left: -15px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#punto1">Punto 1</a> |
+        <a href="#punto2">Punto 2</a>
+    </nav>
+
+    <div id="content-area">
+        <section id="punto1">
+            <h2>Punto 1</h2>
+            <p>Texto del punto 1...</p>
+        </section>
+
+        <section id="punto2">
+            <h2>Punto 2</h2>
+            <p>Texto del punto 2...</p>
+        </section>
+    </div>
+</body>
+
+</html>
