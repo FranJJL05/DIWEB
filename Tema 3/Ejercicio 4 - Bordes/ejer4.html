@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <style>
+        h2 {
+            font-size: 20px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .contenedor {
+            padding: 15px;
+            margin-bottom: 20px;
+            overflow: auto; 
+            border: 1px solid #333;
+        }
+
+        /* 1. Ambos ocultos (overflow: hidden) */
+        .oculto {
+            width: 300px;
+            height: 150px;
+            background-color: #B0E0E6;
+            overflow: hidden; 
+        }
+
+        /* 2. Horizontal visible, Vertical oculto */
+        .horizontal-visible {
+            width: 300px;
+            height: 100px;
+            background-color: #90EE90;
+            overflow-x: scroll; 
+            overflow-y: hidden; 
+        }
+
+        /* 3. Vertical visible, Horizontal oculto (similar al ejemplo de la imagen roja) */
+        .vertical-visible {
+            width: 150px;
+            height: 200px;
+            background-color: #FA8072;
+            overflow-y: scroll; 
+            overflow-x: hidden; 
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Contenedor con Overflow (ambos ocultos)</h2>
+    <section class="contenedor oculto">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam qui impedit facilis optio necessitatibus ratione quo modi nisi rem quos debitis adipisci harum ducimus atque saepe delectus sit, laudantium praesentium?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum doloribus</p>
+        <p>Este párrafo desbordará pero no se verá ninguna barra.</p>
+    </section>
+
+    <h2>Contenedor con Overflow-X (horizontal) visible y Overflow-Y oculto</h2>
+    <section class="contenedor horizontal-visible">
+        <p style="width: 500px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloribus</p>
+        <p style="width: 450px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum doloribus</p>
+        </section>
+
+    <h2>Contenedor con Overflow-Y (vertical) visible y Overflow-X oculto</h2>
+    <section class="contenedor vertical-visible">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe odio consequuntur corrupti officia ratione optio facere delectus in voluptatem eligendi maxime, quasi commodi.</p>
+        <p>Sed quia reiciendis est nulla, culpa doloremque vero, quas debitis, aliquid at ab velit! Consequuntur, aliquid. Rerum dignissimos doloremque non facilis sit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </section>
+</body>
+</html>
