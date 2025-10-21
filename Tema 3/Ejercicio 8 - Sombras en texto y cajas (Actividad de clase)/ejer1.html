@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 130px);
+            grid-gap: 2rem;
+        }
+
+        .box {
+            width: 130px;
+            height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(205, 205, 205, 0.749);
+        }
+
+        .sombra-roja {
+            box-shadow: -5px -5px 0px red;
+        }
+
+        .sombra-violeta {
+            box-shadow: -5px -5px 5px blueviolet;
+        }
+
+        .sombra-verde-claro {
+            box-shadow: -5px -5px -0px 5px limegreen;
+        }
+
+        .sombra-azul-claro {
+            box-shadow: -8px -8px 5px 1px rgb(0, 174, 255);
+        }
+
+        .sombra-rosa {
+            box-shadow: 0px 0px 5px rgb(207, 126, 191);
+        }
+
+        .sombra-amarilla {
+            box-shadow: 0px 0px 14px 5px rgb(192, 216, 32);
+        }
+
+        .sombra-purpura {
+            box-shadow: -5px -5px 0px purple inset;
+        }
+
+        .sombra-cian {
+            box-shadow: -5px -5px 5px cyan inset;
+        }
+
+        .sombra-magenta {
+            box-shadow: -5px -5px 0px 3px rgb(255, 0, 153) inset;
+        }
+
+        .sombra-verde {
+            box-shadow: -5px -8px 10px 2px green inset;
+        }
+
+        .sombra-azul {
+            box-shadow: 0 0 5px blue inset;
+        }
+
+        .sombra-gris {
+            box-shadow: 0 0 10px  5px gray inset;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="box sombra-roja">A</div>
+        <div class="box sombra-violeta">B</div>
+        <div class="box sombra-verde-claro">C</div>
+        <div class="box sombra-azul-claro">D</div>
+        <div class="box sombra-rosa">E</div>
+        <div class="box sombra-amarilla">F</div>
+        <div class="box sombra-purpura">G</div>
+        <div class="box sombra-cian">H</div>
+        <div class="box sombra-magenta">I</div>
+        <div class="box sombra-verde">J</div>
+        <div class="box sombra-azul">K</div>
+        <div class="box sombra-gris">L</div>
+    </div>
+</body>
+
+</html>

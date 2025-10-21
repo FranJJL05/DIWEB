@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            columns: 1;
+            text-align: center;
+        }
+
+        .box {
+            height: 200px;
+            width: 600px;
+            font-size: 50px;
+            line-height: 200px;
+            border: 4px solid black;
+            margin-bottom: 2rem;
+        }
+
+        .sombra-normal {
+            text-shadow: 2px 2px 4px rgb(73, 0, 128);
+            color: rgb(73, 0, 128);
+        }
+
+        .sombra-blanco {
+            background-color: rgb(31, 174, 245);
+            color: white;
+            text-shadow: 4px 4px 8px 1px black;
+        }
+
+        .sombra-relieve {
+            background-color: lightgray;
+            color: lightgray;
+            text-shadow:
+                1px 1px 0 #aaa,
+                -1px -1px 0 #fff;
+        }
+
+        .sombra-hundido {
+            background-color: lightgray;
+            color: lightgray;
+            text-shadow:
+                -1px -1px 0 #aaa,
+                1px 1px 0 #fff;
+        }
+
+        .sombra-contorno {
+            background-color: rgb(31, 174, 245);
+            color: rgb(31, 174, 245);
+            text-shadow:
+                -1px -1px 0 black,
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black;
+        }
+
+        .sombra-1neon {
+            text-shadow:
+                0 0 5px #ff9999,
+                0 0 10px #ff6666,
+                0 0 15px #ff3333,
+                0 0 20px #ff0000;
+        }
+
+        .sombra-2neon {
+            text-shadow:
+                0 0 5px #8a2be2,
+                0 0 10px #8a2be2,
+                0 0 15px #7b68ee,
+                0 0 20px #6a5acd;
+        }
+
+        .sombra-pixelart {
+            color: #a9d0c9;
+            text-shadow:
+                2px 2px 0 #708090,
+                4px 4px 0 #2f4f4f;
+        }
+
+        .sombra-fuego{
+            color: rgb(88, 88, 88);
+            text-shadow:
+                0 -1px 3px #ffd059,
+                0 -3px 8px #fda521,
+                0 -6px 15px #ff7f24,
+                0 -8px 20px #ff5100;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="box sombra-normal">Texto con sombra</div>
+        <div class="box sombra-blanco">Texto blanco legible</div>
+        <div class="box sombra-relieve">Texto con relieve</div>
+        <div class="box sombra-hundido">Texto hundido</div>
+        <div class="box sombra-contorno">Texto con contorno</div>
+        <div class="box sombra-1neon">Texto1 brillo neón</div>
+        <div class="box sombra-2neon">Texto2 brillo neón</div>
+        <div class="box sombra-pixelart">Efecto Pixelart</div>
+        <div class="box sombra-fuego">Efecto Fuego</div>
+    </div>
+</body>
+
+</html>
