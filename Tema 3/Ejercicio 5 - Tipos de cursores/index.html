@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilos del Contenedor */
+        .cursor-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 120px);
+            justify-content: center;
+            gap: 1rem;
+            padding: 10px;
+        }
+
+        /* Estilos Comunes a todas las Cajas */
+        .cursor-box {
+            width: 120px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.0em;
+            text-align: center;
+        }
+
+        /* --- ESTILOS DE CURSOR PARA TODAS LAS PETICIONES --- */
+
+        .crosshair {
+            background-color: #C0392B;
+            cursor: crosshair;
+        }
+
+        .help {
+            background-color: #9B59B6;
+            cursor: help;
+        }
+
+        .move {
+            background-color: #2E86C1;
+            cursor: move;
+        }
+
+        .pointer {
+            background-color: #3498DB;
+            cursor: pointer;
+        }
+
+        .alias {
+            background-color: #2C3E50;
+            cursor: alias;
+        }
+
+        .grabbing {
+            background-color: #B03A2E;
+            cursor: grabbing;
+        }
+
+        .zoom-in {
+            background-color: #8E44AD;
+            cursor: zoom-in;
+        }
+
+        .not-allowed {
+            background-color: #2980B9;
+            cursor: not-allowed;
+        }
+
+        .text {
+            background-color: #F4D03F;
+            cursor: text;
+        }
+
+        .wait {
+            background-color: #D35400;
+            cursor: wait;
+        }
+
+        .progress {
+            background-color: #1ABC9C;
+            cursor: progress;
+        }
+
+        .vertical-text {
+            background-color: #7F8C8D;
+            cursor: vertical-text;
+        }
+
+        .grab {
+            background-color: #34495E;
+            cursor: grab;
+        }
+
+        .zoom-out {
+            background-color: #2ECC71;
+            cursor: zoom-out;
+        }
+
+        .no-drop-1,
+        .no-drop-2 {
+            background-color: #34495E;
+            cursor: no-drop;
+        }
+
+        .copy {
+            background-color: #F4D03F;
+            cursor: copy;
+        }
+
+        .ew-resize {
+            background-color: #E67E22;
+            cursor: ew-resize;
+        }
+
+        .ns-resize {
+            background-color: #95A5A6;
+            cursor: ns-resize;
+        }
+
+        .nwse-resize {
+            background-color: #34495E;
+            cursor: nwse-resize;
+        }
+
+        .nesw-resize {
+            background-color: #9B59B6;
+            cursor: nesw-resize;
+        }
+
+        .col-resize {
+            background-color: #2E86C1;
+            cursor: col-resize;
+        }
+
+        .row-resize {
+            background-color: #3498DB;
+            cursor: row-resize;
+        }
+
+        .context-menu {
+            background-color: #1ABC9C;
+            cursor: context-menu;
+        }
+
+
+        .box-none {
+            background-color: #E67E22;
+            cursor: none;
+        }
+
+        .box-personalized {
+            background-color: #95A5A6;
+            cursor: default;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cursor-grid">
+        <div class="cursor-box crosshair">crosshair</div>
+        <div class="cursor-box help">help</div>
+        <div class="cursor-box move">move</div>
+        <div class="cursor-box pointer">pointer</div>
+        <div class="cursor-box alias">alias</div>
+        <div class="cursor-box grabbing">grabbing</div>
+        <div class="cursor-box zoom-in">zoom-in</div>
+        <div class="cursor-box not-allowed">not-allowed</div>
+
+        <div class="cursor-box progress">progress</div>
+        <div class="cursor-box text">text</div>
+        <div class="cursor-box wait">wait</div>
+        <div class="cursor-box vertical-text">vertical-text</div>
+        <div class="cursor-box no-drop-1">no-drop</div>
+        <div class="cursor-box grab">grab</div>
+        <div class="cursor-box zoom-out">zoom-out</div>
+        <div class="cursor-box no-drop-2">no-drop</div>
+        <div class="cursor-box copy">copy</div>
+        <div class="cursor-box ew-resize">ew-resize</div>
+        <div class="cursor-box ns-resize">ns-resize</div>
+        <div class="cursor-box nwse-resize">nwse-resize</div>
+        <div class="cursor-box nesw-resize">nesw-resize</div>
+        <div class="cursor-box col-resize">col-resize</div>
+        <div class="cursor-box row-resize">row-resize</div>
+        <div class="cursor-box context-menu">context-menu</div>
+
+        <div class="cursor-box box-none">none</div>
+        <div class="cursor-box box-personalized">Personalized</div>
+    </div>
+    </div>
+</body>
+
+</html>
