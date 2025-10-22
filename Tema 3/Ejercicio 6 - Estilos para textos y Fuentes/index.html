@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6 - Estilos de Fuentes y Textos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Bungee+Shade&display=swap" rel="stylesheet">
+    <style>
+        /* --- ESTILOS PARA PÁRRAFOS Y FÓRMULAS --- *
+
+        /* Estilos comunes para los contenedores de los dos primeros párrafos */
+        .paragraph-container {
+            border: 1px solid #d3a17c;
+            background-color: #fcf1e5;
+            padding: 15px;
+            margin-bottom: 20px;
+            max-width: 500px;
+        }
+
+        /* Estilo para el PRIMER PÁRRAFO */
+        .paragraph-container p:first-child {
+            font-family: 'Dancing Script', cursive;
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        /* Estilo para el SEGUNDO PÁRRAFO (ajuste, desborde y elipsis) */
+        .paragraph-ellipsis {
+            font-family: 'Dancing Script', cursive;
+            font-size: 20px;
+            font-style: italic;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        /* Estilo para el TERCER PÁRRAFO (ajustes de espaciado y alineación) */
+        .paragraph-complex {
+            text-align: justify;
+            text-indent: 20px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+
+            line-height: 1.5;
+        }
+
+        /* Estilo para las FÓRMULAS (Fuente Bungee Shade) */
+        .formula {
+            font-family: 'Bungee Shade', cursive;
+            font-size: 24px;
+            margin: 20px 0;
+            line-height: 1;
+        }
+
+        .my-button {
+            /* Estilos base */
+            background-color: #FF9900;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            margin-top: 30px;
+        }
+
+        /* Estilo al pasar el ratón (hover) */
+        .my-button:hover {
+            background-color: #E68A00;
+            cursor: move;
+        }
+
+        /* Estilo al pulsar (active/click) */
+        .my-button:active {
+            background-color: #CC7A00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Estilos de Fuentes Tipográficas</h1>
+    <h2>Estilos para Textos</h2>
+
+    <div class="paragraph-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate architecto eveniet nobis fugit suscipit
+            quibusdam totam recusandae esse aliquam aut amet quasi similique qui, accusamus atque dolorum voluptate!
+            Dicta, quidem?</p>
+    </div>
+
+    <div class="paragraph-container">
+        <p class="paragraph-ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate architecto
+            eveniet nobis fugit suscipit quibusdam totam recusandae esse aliquam aut amet quasi similique qui, accusamus
+            atque dolorum voluptate! Dicta, quidem?</p>
+    </div>
+
+    <p class="paragraph-complex">
+        "LA IMAGINACIÓN ES MÁS IMPORTANTE QUE EL CONOCIMIENTO. EL CONOCIMIENTO ES LIMITADO, MIENTRAS QUE LA IMAGINACIÓN
+        ABARCA EL MUNDO."
+    </p>
+
+    <div class="formula">H2O ES UNA MOLÉCULA COMÚN.</div>
+    <div class="formula">X^2 + Y^2 = R^2 ES LA ECUACIÓN DE UN CÍRCULO.</div>
+
+    <button class="my-button">Registrarse</button>
+
+</body>
+
+</html>
