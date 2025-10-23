@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <style>
+        h1 {
+            font-size: 4em;
+            font-weight: bold;
+            display: inline-block;
+            padding: 0 10px;
+            background: linear-gradient(to bottom, rgb(6, 2, 255), rgb(255, 0, 43));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        .gradient-bar {
+            width: 100%;
+            height: 150px;
+            background: linear-gradient(to right, black, blue, yellow, green, orange);
+        }
+
+        .striped-pattern {
+            margin-top: 5rem;
+            width: 800px;
+            height: 200px;
+            background: repeating-linear-gradient(to bottom, #0000FF 0%, #0000FF 10%, #FFFF00 10%, #FFFF00 20%, #FF0000 20%, #FF0000 30%);
+        }
+
+        .gradiente-resplandor {
+            margin-top: 5rem;
+            width: 600px;
+            height: 350px;
+            background: radial-gradient(ellipse at center, #FFD700 5%, #ff0000 25%, #ff0000 50%, #000000 100%)
+        }
+
+        .gradiente-elipse-definido {
+            margin-top: 5rem;
+            width: 600px;
+            height: 350px;
+            background: radial-gradient(ellipse, #FFD700 40%, #ff0000 50%, #000000 90%)
+        }
+
+        .gradiente-circulo-definido {
+            margin-top: 5rem;
+            width: 600px;
+            height: 350px;
+            background: radial-gradient(circle, #FFD700 60%, #ff0000 70%, #000000 90%)
+        }
+
+        .gradiente-circulo-definido-izq {
+            margin-top: 5rem;
+            width: 600px;
+            height: 350px;
+            background: radial-gradient(circle at left, #FFD700 60%, #ff0000 70%, #000000 90%)
+        }
+
+        .gradiente-color {
+            margin-top: 5rem;
+            width: 900px;
+            height: 200px;
+            background: radial-gradient(circle, blue 10%, #ff0000 50%, #FFD700 80%)
+        }
+
+        .gradiente-color-elipse {
+            margin-top: 5rem;
+            width: 900px;
+            height: 200px;
+            background: radial-gradient(ellipse at center, blue 10%, #ff0000 40%, #FFD700 80%)
+        }
+
+        .gradiente-color-2 {
+            margin-top: 5rem;
+            width: 900px;
+            height: 200px;
+            background: radial-gradient(circle, blue 10%, red 50%, #FFD700 90%)
+        }
+
+        .gradient-cicle-muchos {
+            margin-top: 5rem;
+            width: 700px;
+            height: 400px;
+            background: radial-gradient(circle,
+                    /* Banda 1: #FF8888 (Rojo Claro) */
+                    #FF8888 0%,
+                    #FF8888 10%,
+
+                    /* Banda 2: #CC0000 (Rojo Oscuro) */
+                    #CC0000 10%,
+                    #CC0000 20%,
+
+                    /* Banda 3: #811c1c (Rojo Marrón) */
+                    #811c1c 20%,
+                    #811c1c 30%,
+
+                    /* Banda 4: #FF8888 (Rojo Claro) */
+                    #FF8888 30%,
+                    #FF8888 40%,
+
+                    /* Banda 5: #CC0000 (Rojo Oscuro) */
+                    #CC0000 40%,
+                    #CC0000 50%,
+
+                    /* Banda 6: #811c1c (Rojo Marrón) */
+                    #811c1c 50%,
+                    #811c1c 60%,
+
+                    /* Banda 7: #FF8888 (Rojo Claro) */
+                    #FF8888 60%,
+                    #FF8888 70%,
+
+                    /* Banda 8: #CC0000 (Rojo Oscuro) */
+                    #CC0000 70%,
+                    #CC0000 80%,
+
+                    /* Banda 9: #811c1c (Rojo Marrón) */
+                    #811c1c 80%,
+                    #811c1c 90%,
+
+                    /* Banda 10 */
+                    #FF8888 90%,
+                    #FF8888 100%);
+        }
+
+        .gradient-azul {
+            margin-top: 5rem;
+            width: 900px;
+            height: 400px;
+            background: linear-gradient(to right, #03001d, #1641ff)
+        }
+
+        .gradient-conic {
+            margin-top: 5rem;
+            width: 700px;
+            height: 400px;
+            background: conic-gradient(
+                    yellow 0deg,
+                    
+
+                    rgb(255, 17, 0) 40deg,
+
+                    blue 40deg,
+                    blue 10deg,
+
+                    yellow 70deg,
+
+            
+                    rgb(255, 17, 0) 100deg,
+
+                    blue 100deg,
+                    blue 10deg,
+                    yellow 140deg,
+                    yellow 10deg,
+
+                    rgb(255, 17, 0) 180deg,
+                    blue 180deg,
+
+                    yellow 220deg,
+                    rgb(255, 17, 0) 250deg,
+                    rgb(255, 17, 0) 10deg,
+                    blue 250deg,
+                    yellow 280deg,
+                    
+                    rgb(255, 17, 0) 320deg,
+                    blue 320deg,
+
+                    
+                    yellow 360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Diseño de Interfaces Web</h1>
+    </header>
+    <div class="gradient-bar"></div>
+    <div class="striped-pattern"></div>
+    <div class="gradiente-resplandor"></div>
+    <div class="gradiente-elipse-definido"></div>
+    <div class="gradiente-circulo-definido"></div>
+    <div class="gradiente-circulo-definido-izq"></div>
+    <div class="gradiente-color"></div>
+    <div class="gradiente-color-elipse"></div>
+    <div class="gradiente-color-2"></div>
+    <div class="gradient-cicle-muchos"></div>
+    <div class="gradient-azul"></div>
+    <div class="gradient-conic"></div>
+</body>
+
+</html>
