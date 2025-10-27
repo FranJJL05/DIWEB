@@ -1,0 +1,39 @@
+div{
+    width: 100px;
+    height: 100px;
+    padding: 3px;
+    margin: 3px;
+}
+
+.a div{
+    background-color: blue;
+}
+
+.a{
+    float: left;
+}
+
+.b div {
+    background-color: lightgreen;
+}
+
+.b{
+    float: right;
+}
+
+.c div {
+    background-color: red;
+}
+
+.c{
+    float: right;
+}
+
+.d div {
+    background-color: lightpink;
+}
+
+.d{
+    clear: both;
+}
+
