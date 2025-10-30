@@ -1,0 +1,12 @@
+.section{
+    background-color: black;
+    display: flex;
+    color: white;
+    gap: 1rem;
+    padding-left: 10px;
+}
+
+p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

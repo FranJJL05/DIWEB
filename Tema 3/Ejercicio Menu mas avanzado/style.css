@@ -1,0 +1,31 @@
+.section{
+    background-color: lightblue;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+img{
+    width: 80px;
+    border: 1px solid black;
+}
+
+.container{
+    display: flex;
+    margin-left: 400px;
+}
+
+p{
+    border: 1px solid black;
+    box-sizing:border-box;
+    background-color: white;
+    padding: 10px;
+    margin-left: 3px;
+}
+
+p:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
