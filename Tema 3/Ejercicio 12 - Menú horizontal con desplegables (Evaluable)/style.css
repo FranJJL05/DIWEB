@@ -1,0 +1,176 @@
+/* ESTILOS GENERALES */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+}
+
+html, body {
+    overflow-y: auto;
+}
+
+/* NAVBAR */
+#navbar {
+    background-color: #efefe9;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+/* LOGO IZQUIERDA */
+#logo {
+    float: right;
+}
+#logo a {
+    text-decoration: none;
+    color: white;
+    background-color: #e85d5d;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+/* LOGO / MARCA DERECHA */
+#logo-derecha {
+    float: right;
+    padding: 6px 6px;
+}
+#logo-derecha a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #2e8b57; 
+    padding: 6px 10px;
+    border-radius: 3px;
+    background: white;
+    color: #2e8b57;
+}
+
+/* MENÚ HORIZONTAL */
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu > ul > li {
+    float: left;
+    position: relative; /* referencia para los desplegables absolutos */
+}
+
+/* estilo enlaces del menú principal */
+#menu > ul > li > a {
+    display: block;
+    padding: 12px 18px;
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#menu > ul > li.desplegable > a:hover {
+    background-color: blueviolet;
+}
+
+/* ESTILO "Iliberis" con recuadro naranja y texto blanco */
+#iliberis > a {
+    background: #e85d5d; 
+    color: white !important;
+    padding: 8px 8px;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+/* DESPLEGABLE (PRIMER NIVEL) */
+.desplegable-content {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    min-width: 180px;
+    box-sizing: border-box;
+    z-index: 999;
+    background: blueviolet;
+    padding: 6px 0;
+    border-radius: 2px;
+}
+
+
+
+/* enlaces dentro del desplegable primer nivel */
+.desplegable-content li a {
+    display: block;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    white-space: normal;
+}
+
+/* Cuando paso el ratón sobre el enlace 1º DAW */
+.desplegable-content li:hover> a {
+    background-color: limegreen;
+}
+
+
+/* mostrar desplegable al hacer hover sobre el li padre */
+.desplegable:hover > .desplegable-content {
+    display: block;
+}
+
+/* SUBDESPLEGABLE (SEGUNDO NIVEL) */
+.subdesplegable-content {
+    display: none;
+    position: absolute;
+    top: 0;   
+    left: 100%; 
+    min-width: 240px;
+    box-sizing: border-box;
+    z-index: 1;
+    background: limegreen;
+    padding: 6px 0;
+}
+
+/* enlaces dentro del subdesplegable */
+.subdesplegable-content li a {
+    display: block;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    white-space: normal;
+}
+
+/* mostrar subdesplegable al hacer hover sobre su li contenedor */
+.desplegable-content li:hover > .subdesplegable-content {
+    display: block;
+}
+
+
+/* ESTILO MAIN (contenido bajo la navbar) */
+#main {
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1657374799031-59a240622a7a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1228');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 20px; 
+    margin-top: 200px;
+}
+
+#btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #e85d5d;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#btn:hover {
+    background-color: #d24a4a;
+}
