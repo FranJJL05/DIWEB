@@ -1,0 +1,57 @@
+.raleway-tipoLetra {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+nav{
+    background-color: rgb(20, 61, 100);
+    color: grey;
+}
+
+section{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+main{
+    background-color: rgb(245, 245, 245);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    gap: 2rem;
+}
+
+.introduccion{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 200px;
+    
+}
+
+.introduccion p{
+    margin-top: 0px;
+    color: grey;
+}
+
+button{
+    width: 60%;
+    color: white;
+    background-color: rgb(92, 84, 217);
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+img{
+    width: 80%;
+}
