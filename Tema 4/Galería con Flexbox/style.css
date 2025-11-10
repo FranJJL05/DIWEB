@@ -1,0 +1,50 @@
+.section-hero {
+    text-align: center;
+}
+
+.section {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.imgs img {
+    width: 250px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px grey;
+}
+
+.section-galeria {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.section-galeria img {
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px grey;
+}
+
+.uno {
+    order: 1;
+}
+
+.dos {
+    order: 2;
+}
+
+.subtitulo {
+    font-weight: bolder;
+    margin-bottom: -15px;
+    font-size: large;
+}
