@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Maquetando con Flexbox</title>
+</head>
+
+<body>
+    <!-- Cabecera -->
+    <header>
+        <section class="container">
+            <article>
+                <h1>Maquetando en CSS con Flexbox</h1>
+                <h2>Selectores, Pseudoclases, Pseudoelementos, Flexbox y más</h2>
+            </article>
+            <figure>
+                <img src="assets/dev.svg" alt="Inicio">
+
+            </figure>
+        </section>
+    </header>
+
+    <!-- Cuerpo -->
+    <main>
+        <!-- Sección about -->
+        <section class="about container">
+            <article>
+                <h2 class="title">¿Quienes somos?</h2>
+
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos esse voluptas repellat. Sunt officia id
+                    error, vero accusantium quod? Sint voluptatum rerum temporibus aliquid culpa magni dolorem fuga
+                    impedit iure?</P>
+                <P>Necessitatibus eligendi ipsam beatae ullam voluptatum adipisci repellendus dolorum optio officia
+                    laudantium at doloremque dolor minus nobis quisquam vero, repellat aliquid accusamus culpa delectus
+                    facilis? Sequi vero saepe ducimus quaerat?</P>
+                <a href="#">Únete al curso</a>
+            </article>
+
+            <figure>
+                <img src="assets/people.svg" alt="People">
+            </figure>
+        </section>
+
+        <!-- Sección Portafolio -->
+        <section class="portfolio">
+            <div class="portfolio__container container">
+                <h2 class="title">Nuestros planes de trabajo</h2>
+                <div class="portfolio__cards">
+                    <article class="portfolio__card">
+                        <img src="assets/card1.jpg" alt="Card1">
+
+                        <div class="portfolio__texts">
+                            <h3>Únete a nuestro plan</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis delectus maxime,
+                                fugiat excepturi qui unde nostrum iure ipsum optio quisquam. Placeat necessitatibus
+                                dicta magni ut nostrum nobis nisi, veniam atque!</p>
+                            <a href="#">Entra ahora</a>
+                        </div>
+
+                    </article>
+                    <article class="portfolio__card">
+                        <img src="assets/card2.jpg" alt="Card1">
+
+                        <div class="portfolio__texts">
+                            <h3>Únete a nuestro plan</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis delectus maxime,
+                                fugiat excepturi qui unde nostrum iure ipsum optio quisquam. Placeat necessitatibus
+                                dicta magni ut nostrum nobis nisi, veniam atque!</p>
+                            <a href="#">Entra ahora</a>
+                        </div>
+
+                    </article>
+                    <article class="portfolio__card">
+                        <img src="assets/card3.jpg" alt="Card1">
+
+                        <div class="portfolio__texts">
+                            <h3>Únete a nuestro plan</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis delectus maxime,
+                                fugiat excepturi qui unde nostrum iure ipsum optio quisquam. Placeat necessitatibus
+                                dicta magni ut nostrum nobis nisi, veniam atque!</p>
+                            <a href="#">Entra ahora</a>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección central -->
+        <section class="central">
+            <article class="container">
+                <h2 class="title">Hacemos sueños en hechos.</h2>
+            </article>
+        </section>
+
+        <!-- Sección Galería de fotos -->
+        <section class="gallery container">
+            <h2 class="title">Nuestro trabajo</h2>
+
+            <article class="gallery__container">
+                <img src="assets/img1.jpg" alt="foto1" class="gallery__picture">
+                <img src="assets/img2.jpg" alt="foto2" class="gallery__picture">
+                <img src="assets/img3.jpg" alt="foto3" class="gallery__picture">
+                <img src="assets/img4.jpg" alt="foto4" class="gallery__picture">
+                <img src="assets/img5.jpg" alt="foto5" class="gallery__picture">
+                <img src="assets/img6.jpg" alt="foto6" class="gallery__picture">
+            </article>
+        </section>
+
+        <!-- Sección languages -->
+        <section class="languages">
+            <div class="container">
+                <h2 class="title">Expertos en:</h2>
+                
+                <article>
+                    <img src="assets/html-5.svg" alt="html">
+                    <img src="assets/css-3.svg" alt="css">
+                    <img src="assets/javascript.svg" alt="javascript">
+                    <img src="assets/react.svg" alt="react">
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <section class="container">
+            <article class="footer__texts">
+                <h2 class="title">Contactanos</h2>
+
+                <div>
+                    <a href="#" class="fa-facebook footer__icon fa-brands"></a>
+                    <a href="#" class="fa-twitter footer__icon fa-brands"></a>
+                    <a href="#" class="fa-instagram footer__icon fa-brands"></a>
+                </div>
+
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#">Sobre nosotros</a>
+                    <a href="#">Trabajos</a>
+                </nav>
+
+                <p>Derechos reservados &copy; Francisco José</p>
+            </article>
+
+            <figure>
+                <img src="assets/mail.svg" alt="email">
+            </figure>
+        </section>
+    </footer>
+</body>
+
+</html>
