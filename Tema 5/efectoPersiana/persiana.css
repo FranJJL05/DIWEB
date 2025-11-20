@@ -1,0 +1,54 @@
+section{
+    display: flex;
+    background-color: black;
+    width: 800px;
+    font-size: 28px;
+}
+
+section div{
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios{
+    color: yellow;
+    border-top: yellow 0.3em solid;
+}
+
+.servicios:hover{
+    background-color: yellow;
+    transition: all 1s ease-out;
+}
+
+.recursos{
+    color: red;
+    border-top: red 0.3em solid;
+}
+
+.recursos:hover{
+    background-color: red;
+    transition: all 1s ease-out;
+}
+
+.proyectos{
+    color: lightgreen;
+    border-top: lightgreen 0.3em solid;
+}
+
+.proyectos:hover{
+    background-color: lightgreen;
+    transition: all 1s ease-out;
+}
+
+.contacto{
+    color: rgb(255, 28, 255);
+    border-top: rgb(255, 28, 255) 0.3em solid;
+}
+
+.contacto:hover{
+    background-color: rgb(255, 28, 255);
+    transition: all 1s ease-out;
+}
