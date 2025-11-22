@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+section {
+    margin-bottom: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    color: #333;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background-color: #e63946;
+}
+
+/* Galería Regular */
+.gallery-regular {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.gallery-regular img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Galería Irregular */
+.gallery-irregular {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px;
+    gap: 15px;
+    grid-template-areas: 
+        "area1 area2 area2 area3"
+        "area4 area4 area5 area3"
+        "area4 area4 area6 area6"
+        "area7 area8 area8 area8";
+}
+
+.gallery-irregular div {
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.gallery-irregular img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Asignación de áreas */
+.item-1 { grid-area: area1; }
+.item-2 { grid-area: area2; }
+.item-3 { grid-area: area3; }
+.item-4 { grid-area: area4; }
+.item-5 { grid-area: area5; }
+.item-6 { grid-area: area6; }
+.item-7 { grid-area: area7; }
+.item-8 { grid-area: area8; }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .gallery-regular {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-irregular {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "area1"
+            "area2"
+            "area3"
+            "area4"
+            "area5"
+            "area6"
+            "area7"
+            "area8";
+        grid-auto-rows: 250px;
+    }
+}
