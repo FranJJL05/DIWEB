@@ -1,0 +1,139 @@
+/* Variables para colores */
+:root {
+    --color-principal: #4C52DE; 
+    --color-blanco: #ffffff;
+    --color-gris-claro: #f4f4f4;
+    --color-texto-oscuro: #000000;
+}
+
+/* Estilos generales y reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CORRECCIÓN 1: Centrar el contenido del body (incluyendo el .container) */
+body {
+    background-color: var(--color-gris-claro);
+    font-family: sans-serif; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+    width: 100vw;
+}
+
+.container{
+    max-width: 1200px;
+    display: block; 
+    margin: auto;
+}
+
+/* Estructura Grid Principal (section) */
+.section {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    width: 100%;
+    min-height: 650px; 
+    position: relative;
+    overflow: hidden; 
+    border-radius: 10px;
+    gap: 3rem;
+}
+
+/* Estilos para el Fondo Diagonal */
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-principal);
+    clip-path: polygon(36% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 0; 
+}
+
+/* Contenedor del Formulario */
+.container-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 20px; 
+    position: relative; 
+    z-index: 1; 
+}
+
+/* Título */
+.container-formulario h1 {
+    font-size: 2.2em;
+    color: var(--color-texto-oscuro); 
+    margin-bottom: 30px;
+    position: relative; 
+    font-weight: 700;
+}
+
+/* Línea debajo del H1 con ::after */
+.container-formulario h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 70px;
+    height: 5px;
+    background-color: var(--color-principal);
+}
+
+/* Estilos de los inputs de texto/email */
+.container-formulario input[type="text"],
+.container-formulario input[type="email"] {
+    padding: 15px 20px;
+    border: 1px solid black;
+    font-size: 1em;
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--color-blanco);
+    color: var(--color-texto-oscuro);
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+
+.container-formulario input[placeholder="Mensaje..."] {
+    height: 200px;
+    text-align: start;
+}
+
+/* Botón de Enviar */
+.container-formulario button {
+    background-color: var(--color-principal);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    color: var(--color-blanco);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    max-width: 200px;
+    margin-top: 10px;
+    align-self: flex-start; 
+}
+
+
+/* Contenedor de la Ilustración */
+
+.img-izq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+.img-izq img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
