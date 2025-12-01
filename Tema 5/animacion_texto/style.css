@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Source Sans 3";
+}
+
+section{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+section div{
+    position: relative;
+    width: 50%;
+    background-color: #20506b;
+    overflow: hidden;
+}
+
+section div:nth-child(1){
+    background-image: url(8.jpg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+section div h2{
+    position: absolute;
+    font-size: 12em;
+    white-space: nowrap;
+    line-height: 100vh;
+}
+
+section div:nth-child(1) h2{
+    left: 100%;
+    animation: animation 60s linear infinite;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: #fff;
+    -webkit-text-fill-color: transparent;
+}
+
+section div:nth-child(2) h2{
+    left: 0;
+    animation: animation 60s linear infinite;
+}
+
+@keyframes animation {
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
