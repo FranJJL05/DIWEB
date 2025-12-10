@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Section header -->
+    <header class="section section_header">
+        <div class="container container_header">
+            <div class="texto_izq">
+                <h1>Creamos el sitio web ideal para ti</h1>
+                <p>ANA FUENTES, tirando código en la web</p>
+            </div>
+            <div class="img_drcha">
+                <img src="img/logo.jfif" alt="Logo">
+            </div>
+        </div>
+    </header>
+
+    <!--Section Nuesstro trabajo  -->
+    <section class="section section_hero" id="section_hero">
+        <div class="container container_hero">
+            <div class="content-btn2">
+                <a href="#tienda-img">Para Ver más Pulsa</a>
+            </div>
+
+            <div class="show" id="tienda-img">
+                <div class="show__image">
+                    <a href="#seccion2" class="show__close">X</a>
+                </div>
+            </div>
+
+
+            <div class="container_conoce">
+                <h3 class="styleh3">Conoce nuestro trabajo</h3>
+                <p>Echa un vistazo a nuestro trabajo</p>
+
+                <div class="container_imgs">
+
+
+                    <div class="item">
+                        <img src="img/1.jfif" alt="Imagen 2">
+                        <div class="encima">
+                            <p>Diseña tu propia web. Impulsa tu marca en internet y haz que tu público te conozca
+                                gracias a tu web.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/2.jfif" alt="Imagen 2">
+                        <div class="encima">
+                            <p>Diseña tu propia web. Impulsa tu marca en internet y haz que tu público te conozca
+                                gracias a tu web.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/3.jfif" alt="Imagen 3">
+                        <div class="encima">
+                            <p>Diseña tu propia web. Impulsa tu marca en internet y haz que tu público te conozca
+                                gracias a tu web.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/4.jfif" alt="Imagen 3">
+                        <div class="encima">
+                            <p>Diseña tu propia web. Impulsa tu marca en internet y haz que tu público te conozca
+                                gracias a tu web.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/5.jfif" alt="Imagen 3">
+                        <div class="encima">
+                            <p>Diseña tu propia web. Impulsa tu marca en internet y haz que tu público te conozca
+                                gracias a tu web.</p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/6.jfif" alt="Imagen 3">
+                        <div class="encima">
+                            <p>Diseña tu propia web. Impulsa tu marca en internet y haz que tu público te conozca
+                                gracias a tu web.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section precios -->
+    <section class="section section_precios">
+        <div class="container container_precios">
+            <h3 class="styleh3">Tabla de precios</h3>
+
+            <div class="container_articles">
+                <article class="article">
+                    <h4 class="title_article">Básico</h4>
+                    <p class="precio_euros">10€ / por mes</p>
+                    <i class="fa-solid fa-layer-group"></i>
+                    <p class="text_diseño_exclusivo">Diseño exclusivo</p>
+                    <p>Realizamos diseños exclusivos para ti al mejor precio.</p>
+                    <a href="#" class="btn_comprar">Comprar ahora</a>
+                </article>
+
+                <article class="article">
+                    <h4 class="title_article">Medio</h4>
+                    <p class="precio_euros">20€ / por mes</p>
+                    <i class="fa-solid fa-mobile"></i>
+                    <p class="text_diseño_exclusivo">Diseño responsive</p>
+                    <p>Todas nuestras páginas son Responsive Web Design.</p>
+                    <a href="#" class="btn_comprar">Comprar ahora</a>
+                </article>
+
+                <article class="article">
+                    <h4 class="title_article">Avanzado</h4>
+                    <p class="precio_euros">30€ / por mes</p>
+                    <i class="fa-solid fa-circle-arrow-up"></i>
+                    <p class="text_diseño_exclusivo">Diseño exclusivo</p>
+                    <p>Los diseños son personalizados. le ponemos tu marca, tu personalidad.</p>
+                    <a href="#" class="btn_comprar">Comprar ahora</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section contacta -->
+    <section class="section sectio_contacta">
+        <div class="container container_contacta">
+            <form action="" class="formulario">
+                <h2>Contacta con nosotros:</h2>
+
+                <label for="nombre"></label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre cliente:">
+
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email cliente:">
+
+                <label for="mensaje"></label>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje..."></textarea>
+
+                <button type="submit" class="enviar">Enviar ahora</button>
+
+            </form>
+
+            <img src="img/tienda.jfif" alt="Imagen tienda">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section section_footer">
+        <div class="container container_footer">
+            <p>&copy;2023 Ana MªFuentes</p>
+        </div>
+    </footer>
+</body>
+
+</html>
