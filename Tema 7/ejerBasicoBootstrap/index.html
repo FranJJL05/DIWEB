@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <!-- Section 1: Perfil -->
+        <div class="card shadow-sm border-0 mb-5">
+            <div class="card-body p-4">
+                <div class="row align-items-center">
+                    <div class="col-md-2 text-center">
+                        <img src="https://picsum.photos/150" alt="Ana Fuentes"
+                            class="rounded-circle img-fluid object-fit-cover shadow-sm"
+                            style="width: 150px; height: 150px;">
+                    </div>
+                    <div class="col-md-7">
+                        <h2 class="fw-bold mb-1">Ana Fuentes</h2>
+                        <p class="text-secondary mb-3">Profesora de Desarrollo Web</p>
+                        <p class="text-secondary mb-0">Especialista en sistemas, redes, programación y desarrollo de IAs
+                            para ciclos formativos.</p>
+                    </div>
+                    <div class="col-md-3 text-center d-flex flex-column gap-2">
+                        <button class="btn btn-primary w-100">
+                            <i class="bi bi-envelope me-2"></i>Contactar
+                        </button>
+                        <button class="btn btn-outline-secondary w-100">
+                            <i class="bi bi-info-circle me-2"></i>Ver Más
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Galeria Imagenes -->
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="p-2">
+                        <img src="https://picsum.photos/400/300?1" class="card-img-top rounded" alt="Imagen 1">
+                    </div>
+                    <div class="card-body text-center pt-0 pb-2">
+                        <small class="text-muted">Imagen 1</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="p-2">
+                        <img src="https://picsum.photos/400/300?2" class="card-img-top rounded" alt="Imagen 2">
+                    </div>
+                    <div class="card-body text-center pt-0 pb-2">
+                        <small class="text-muted">Imagen 2</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="p-2">
+                        <img src="https://picsum.photos/400/300?3" class="card-img-top rounded" alt="Imagen 3">
+                    </div>
+                    <div class="card-body text-center pt-0 pb-2">
+                        <small class="text-muted">Imagen 3</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Hero Bootstrap -->
+        <div class="card border-0 shadow-sm my-5 overflow-hidden">
+            <div class="row g-0">
+                <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
+                    <h2 class="fw-bold mb-3">Bienvenido a Bootstrap 5</h2>
+                    <p class="text-secondary mb-4">Aprende a diseñar páginas web modernas, responsivas y profesionales
+                        utilizando el framework más usado del mundo.</p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-primary px-4"><i class="bi bi-magic me-2"></i>Empezar</button>
+                        <button class="btn btn-outline-secondary px-4"><i class="bi bi-code-slash me-2"></i>Ver
+                            teoría</button>
+                    </div>
+                </div>
+                <div class="col-md-6">  
+                    <img src="https://picsum.photos/600/400"
+                        class="img-fluid h-100" alt="Skyscraper">
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Planes de Precios -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Planes de Precios</h2>
+        </div>
+
+        <div class="row g-4 mb-5">
+            <!-- Plan Básico -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border p-3">
+                    <div class="card-body text-center">
+                        <div class="mb-3 text-primary">
+                            <i class="bi bi-box-seam display-4"></i>
+                        </div>
+                        <h4 class="fw-bold">Básico</h4>
+                        <h2 class="fw-bold text-success my-3">9,99 €/mes</h2>
+                        <ul class="list-unstyled text-secondary mb-4 text-start mx-auto" style="max-width: 250px;">
+                            <li class="mb-2"><i class="bi bi-check-lg me-2 fw-bold"></i>5 GB de almacenamiento</li>
+                            <li class="mb-2"><i class="bi bi-check-lg me-2 fw-bold"></i>Soporte email</li>
+                            <li class="mb-2"><i class="bi bi-check-lg me-2 fw-bold"></i>Acceso móvil</li>
+                        </ul>
+                        <button class="btn btn-outline-primary w-100"><i class="bi bi-cart me-2"></i>Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plan Profesional -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow border-primary border-2 p-3 bg-light-subtle">
+                    <div class="card-body text-center">
+                        <div class="mb-3 text-primary">
+                            <i class="bi bi-award display-4"></i>
+                        </div>
+                        <h4 class="fw-bold">Profesional</h4>
+                        <h2 class="fw-bold text-success my-3">19,99 €/mes</h2>
+                        <ul class="list-unstyled text-secondary mb-4 text-start mx-auto" style="max-width: 250px;">
+                            <li class="mb-2"><i class="bi bi-check-lg me-2 fw-bold text-dark"></i>50 GB de
+                                almacenamiento</li>
+                            <li class="mb-2"><i class="bi bi-check-lg me-2 fw-bold"></i>Soporte prioritario</li>
+                            <li class="mb-2"><i class="bi bi-check-lg me-2 fw-bold"></i>Integración APIs</li>
+                            <li class="mb-2"><i class="bi bi-check-lg me-2 fw-bold"></i>Usuarios ilimitados</li>
+                        </ul>
+                        <button class="btn btn-primary w-100"><i class="bi bi-lightning-charge me-2"></i>Empezar
+                            ahora</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plan Empresas -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border p-3">
+                    <div class="card-body text-center">
+                        <div class="mb-3 text-primary">
+                            <i class="bi bi-globe display-4"></i>
+                        </div>
+                        <h4 class="fw-bold">Empresas</h4>
+                        <h2 class="fw-bold text-success my-3">39,99 €/mes</h2>
+                        <ul class="list-unstyled text-secondary mb-4 text-start mx-auto" style="max-width: 250px;">
+                            <li class="mb-2"><i class="bi bi-check-lg me-2 fw-bold"></i>200 GB de almacenamiento</li>
+                            <li class="mb-2"><i class="bi bi-check-lg me-2 fw-bold"></i>Soporte 24/7</li>
+                            <li class="mb-2"><i class="bi bi-check-lg me-2 fw-bold"></i>Integración avanzada</li>
+                            <li class="mb-2"><i class="bi bi-check-lg me-2 fw-bold"></i>SLA garantizado</li>
+                        </ul>
+                        <button class="btn btn-dark w-100"><i class="bi bi-briefcase me-2"></i>Contactar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
