@@ -122,6 +122,12 @@ a:hover {
 }
 
 
+/* Estilos página clientes.html */
+.bg-second-alpha-color{
+    background-color: var(--second-alpha-color);
+}
+
+
 
 /* Media Query */
 @media (min-width: 992px) {
