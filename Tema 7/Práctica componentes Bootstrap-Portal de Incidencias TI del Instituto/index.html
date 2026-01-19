@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Incidencias TI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark sticky-top p-3">
+            <div class="container-fluid">
+                <div>
+                    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                        <i class="bi bi-briefcase-fill text-danger"></i> <span class="fw-bold">Incidencias TI</span>
+                        <span class="badge text-bg-warning">Pendientes: 4</span>
+                    </a>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+                        <span class="badge text-bg-warning"> <i class="bi bi-plus-circle-fill text-success"></i> Nueva
+                            incidencia</span>
+                    </a>
+                    <button class="navbar-toggler d-flex align-items-center gap-2" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#panelSoporte">
+                        <span class="navbar-toggler-icon"></span>
+                        <p class="mb-0">Menu/Filtros</p>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="panelSoporte">
+            <div class="offcanvas-header border-bottom border-secondary">
+                <h5 class="offcanvas-title">
+                    <i class="bi bi-gear-fill"></i> Panel de soporte
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <p class="text-secondary small text-uppercase mb-2">Ir a sección:</p>
+                <div class="list-group list-group-flush mb-4 rounded">
+                    <a href="#lista-incidencias" class="list-group-item list-group-item-action">📋 Lista de
+                        incidencias</a>
+                    <a href="#estado-sistema" class="list-group-item list-group-item-action">🖥️ Estado del sistema</a>
+                    <a href="#faq" class="list-group-item list-group-item-action">❓ FAQ</a>
+                    <a href="#diagnostico" class="list-group-item list-group-item-action">🧪 Diagnóstico</a>
+                </div>
+
+                <h6 class="mb-3">Filtros rápidos:</h6>
+
+                <div class="mb-3">
+                    <label class="form-label small text-secondary">Tipo</label>
+                    <select class="form-select form-select-sm" aria-label="Filtro tipo">
+                        <option selected>Todos</option>
+                        <option value="1">Red / WiFi</option>
+                        <option value="2">Impresoras</option>
+                        <option value="3">Usuarios / Cuentas</option>
+                    </select>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label small text-secondary">Prioridad</label>
+                    <div class="btn-group w-100" role="group">
+                        <button type="button" class="btn btn-sm btn-outline-light active">Todas</button>
+                        <button type="button" class="btn btn-sm btn-outline-warning">Media</button>
+                        <button type="button" class="btn btn-sm btn-outline-danger">Alta</button>
+                    </div>
+                </div>
+
+                <hr class="border-secondary">
+
+                <div class="d-grid gap-2 mb-3">
+                    <button class="btn btn-outline-info btn-sm">
+                        <i class="bi bi-file-earmark-text"></i> Exportar informe
+                    </button>
+                    <button class="btn btn-outline-success btn-sm">
+                        <i class="bi bi-check-square"></i> Marcar todo como revisado
+                    </button>
+                </div>
+
+                <div class="alert alert-warning small mt-4" role="alert">
+                    <strong>Consejo:</strong> adjunta pasos y capturas para poder cerrar incidencias rápido.
+                </div>
+            </div>
+    </header>
+
+    <main class="container my-4">
+
+        <div class="p-4 p-md-5 mb-4 rounded text-bg-light shadow-sm">
+            <div class="col-md-10">
+                <h1 class="fw-bold">Portal de Incidencias TI</h1>
+                <p class="text-secondary">Caso real: incidencias típicas del instituto (WiFi, impresoras, cuentas,
+                    aulas) con componentes Bootstrap.</p>
+            </div>
+        </div>
+
+        <div id="lista-incidencias" class="mb-3">
+            <h3><i class="bi bi-clipboard-data text-warning"></i> Lista de incidencias</h3>
+        </div>
+
+        <div class="row g-4 mb-5">
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-danger border-opacity-25">
+                    <div class="card-header d-flex justify-content-between align-items-center bg-white">
+                        <h5 class="card-title mb-0">WiFi cae en Aula 2.3</h5>
+                        <span class="badge bg-danger">Alta</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-muted">Los alumnos pierden conexión cada 10-15 min.</p>
+
+                        <div class="d-flex justify-content-between small text-muted mb-1">
+                            <span>Progreso</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="progress mb-3" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                            aria-valuemax="100">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                                style="width: 60%"></div>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="popover"
+                                data-bs-title="Sugerencia rápida"
+                                data-bs-content="Comprueba RSSI, canal, saturación 2.4GHz y si hay bucles en switch.">
+                                <i class="bi bi-info-circle"></i> Sugerencia
+                            </button>
+
+                            <button class="btn btn-dark btn-sm" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#detallesWifi">
+                                Ver detalles
+                            </button>
+                        </div>
+
+                        <div class="collapse mt-3" id="detallesWifi">
+                            <div class="card card-body bg-light border-0 small font-monospace">
+                                <strong>Detalles:</strong>
+                                <ul class="small mt-2 mb-0">
+                                    <li> AP: AULA-2.3-AP01</li>
+                                    <li> Hora pico: 10:30</li>
+                                    <li> Observacion: microcortes al cambiar de canal</li>
+                                </ul>
+                                <div>
+                                    <p class="mb-0"><small>Log: deauth reason=4</small></p>
+                                    <p class="mb-0"><small>DHCP renew ok</small></p>
+                                    <p class="mb-0"><small>RSSI fluctuante</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm border-warning border-opacity-25">
+                    <div class="card-header d-flex justify-content-between align-items-center bg-white">
+                        <h5 class="card-title mb-0">Impresora 2º piso no imprime</h5>
+                        <span class="badge text-bg-warning">Media</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-muted">Cola atascada, "Error de controlador".</p>
+
+                        <div class="d-flex justify-content-between small text-muted mb-1">
+                            <span>Progreso</span>
+                            <span>25%</span>
+                        </div>
+                        <div class="progress mb-3" role="progressbar">
+                            <div class="progress-bar bg-warning" style="width: 25%"></div>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="popover"
+                                data-bs-placement="top" data-bs-custom-class="custom-popover"
+                                data-bs-title="Pista (Impresoras)"
+                                data-bs-content="Reinicia el spooler, borra cola y reinstala el driver correcto (x64).">
+                                <i class="bi bi-lightbulb"></i> Pista
+                            </button>
+
+                            <button class="btn btn-outline-success btn-sm" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#solucionImpresora">
+                                Solución rápida
+                            </button>
+                        </div>
+
+                        <div class="collapse mt-3" id="solucionImpresora">
+                            <div class="alert alert-success border-0 mb-0">
+                                <p class="mb-0">Pasos: detener spooler → borrar cola → iniciar spooler → imprimir test.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="estado-sistema" class="mb-3 mt-5">
+            <h3><i class="bi bi-display"></i> Estado del sistema</h3>
+        </div>
+
+        <div class="row g-4 mb-5">
+
+            <div class="col-md-7">
+                <div class="card h-100 shadow-sm p-3">
+                    <h5 class="card-title mb-4">Monitorización en tiempo real</h5>
+
+                    <div class="d-flex align-items-center gap-4 mb-4">
+                        <div class="text-center">
+                            <div class="spinner-border text-primary" role="status">
+                                <span class="visually-hidden">Cargando...</span>
+                            </div>
+                            <div class="small text-muted mt-1">Sincronizando</div>
+                        </div>
+
+                        <div class="text-center">
+                            <div class="spinner-grow text-success" role="status">
+                                <span class="visually-hidden">OK</span>
+                            </div>
+                            <div class="small text-muted mt-1">Servicios OK</div>
+                        </div>
+                        <div>
+                            <button class="btn btn-warning disabled" type="button">
+                                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                                <span role="status">Cargando métricas...</span>
+                            </button>
+                            <div class="small text-muted mt-1">Métricas</div>
+                        </div>
+                    </div>
+
+                    <hr class="text-secondary">
+
+                    <label class="form-label small text-muted">Carga del servidor (animada)</label>
+                    <div class="progress" role="progressbar" aria-label="Carga servidor" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                            style="width: 75%">75%</div>
+                    </div>
+                    <div class="form-text small">Simulación: picos en cambios de clase.</div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <div class="card h-100 shadow-sm p-3">
+                    <h5 class="card-title">Diagnóstico rápido</h5>
+                    <p class="text-muted small">Panel lateral (collapse horizontal):</p>
+
+                    <button class="btn btn-outline-secondary mb-3 tamaño-btn" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelLateral" aria-expanded="false">
+                        Abrir panel
+                    </button>
+
+                    <div style="min-height: 120px;">
+                        <div class="collapse collapse-horizontal" id="panelLateral">
+                            <div class="card card-body" style="width: 300px;">
+                                <strong>Checklist:</strong>
+                                <ul class="small mt-2 mb-0">
+                                    <li> Ping gateway</li>
+                                    <li> DNS OK</li>
+                                    <li> DHCP leases</li>
+                                    <li> Logs AP/Switch</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-auto small text-muted pt-2">Útil para soporte de primera línea.</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="faq" class="mb-3">
+            <h3><i class="bi bi-question-circle text-danger"></i> Preguntas frecuentes (FAQ)</h3>
+        </div>
+
+        <div class="accordion shadow-sm mb-5" id="accordionFAQ">
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq1">
+                        No puedo entrar (usuario/contraseña)
+                    </button>
+                </h2>
+                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        Verifica usuario, reset de contraseña y que no esté bloqueada la cuenta. Si persiste, abre
+                        ticket con captura.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#faq2">
+                        La WiFi va lenta en horas punta
+                    </button>
+                </h2>
+                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        Puede haber saturación. Conecta a 5GHz si es posible y evita descargas masivas.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item border-primary border-opacity-25">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        La impresora imprime en blanco / cola bloqueada
+                    </button>
+                </h2>
+                <div id="faq3" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        Cancela cola, reinicia spooler y prueba impresión. Si falla, reinstala driver o revisa
+                        consumibles.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="diagnostico" class="mb-3">
+            <h3><i class="bi bi-magic"></i> Diagnóstico (Collapse)</h3>
+        </div>
+
+        <div class="card shadow-sm mb-5">
+            <div class="card-body">
+                <p class="text-secondary">Simulación de documentación técnica para cerrar incidencias.</p>
+
+                <div class="d-flex gap-2 mb-3">
+                    <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#logTecnico">
+                        Ver log completo
+                    </button>
+                    <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#planAccion">
+                        Ver plan de acción
+                    </button>
+                </div>
+
+                <div class="collapse" id="logTecnico">
+                    <div class="card card-body bg-light border-0">
+                        <h6 class="fw-bold">Log (ejemplo)</h6>
+                        <div class="mb-0 text-muted">
+                            <p class="mb-0">AP=AULA-2.3-AP01</p>
+                            <p class="mb-0">Clients=29</p>
+                            <p class="mb-0">Channel=6 (2.4GHz) - interference high</p>
+                            <p class="mb-0">Event: deauth reason=4</p>
+                            <p class="mb-0">Action: optimize channels + check firmware</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collapse mt-3" id="planAccion">
+                    <div class="alert alert-info border-0">
+                        <strong>Pasos:</strong>
+                        <ol class="mb-0 small">
+                            <li>Medir saturación 2.4/5GHz (hora punta).</li>
+                            <li>Reconfigurar canales y potencia.</li>
+                            <li>Actualizar firmware AP.</li>
+                            <li>Verificar bucles en switch y STP.</li>
+                            <li>RE-test y documentar cierre.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script>
+        // Inicializar todos los popovers de la página
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
+</body>
+
+</html>
