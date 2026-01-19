@@ -127,6 +127,11 @@ a:hover {
     background-color: var(--second-alpha-color);
 }
 
+/* Estilos página contacto.html */
+.carousel-caption{
+    z-index: 1;
+}
+
 
 
 /* Media Query */
