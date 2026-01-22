@@ -9,3 +9,17 @@
 
     --color-coral: #F08080;
 }
+
+@layer components{
+    .card{
+        @apply bg-red-500 grid place-content-center rounded-lg
+        text-white font-bold border-2 border-red-800
+        text-4xl
+    } 
+
+    .card2{
+        @apply  bg-red-500 grid place-content-center rounded-lg
+        text-white font-bold border-2 border-red-600
+        text-3xl p-9
+    }
+}
