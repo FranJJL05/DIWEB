@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Bootstrap</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            background-color: #18191a;
+            color: #e4e6eb; 
+            padding-top: 70px;
+        }
+        
+        .bg-fb-dark {
+            background-color: #242526 !important;
+        }
+        
+        .search-input {
+            background-color: #3a3b3c;
+            border: none;
+            color: white;
+            border-radius: 50px;
+        }
+        
+        .btn-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #3a3b3c;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+        }
+        
+        .btn-circle:hover {
+            background-color: #4e4f50;
+            color: white;
+        }
+
+        .avatar-sm {
+            width: 36px;
+            height: 36px;
+            object-fit: cover;
+        }
+
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #18191a; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3a3b3c; 
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-fb-dark border-bottom border-secondary">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center gap-2">
+                <a class="navbar-brand text-primary fw-bold fs-2" href="#"><img src="img/logo.png" alt="logo"></a>
+                <input class="form-control search-input d-none d-md-block" type="search" placeholder="Buscar en Facebook" style="width: 240px;">
+            </div>
+
+            <div class="d-none d-md-flex gap-5 fs-4">
+                <a href="#" class="text-primary border-bottom border-primary border-3 pb-2"><i class="bi bi-house-door-fill"></i></a>
+                <a href="#" class="text-secondary"><i class="bi bi-flag"></i></a>
+                <a href="#" class="text-secondary"><i class="bi bi-play-btn"></i></a>
+                <a href="#" class="text-secondary"><i class="bi bi-shop"></i></a>
+                <a href="#" class="text-secondary"><i class="bi bi-people"></i></a>
+            </div>
+
+            <div class="d-flex align-items-center gap-2">
+                <div class="d-none d-xl-block fw-bold me-2">Ana Fuentes</div>
+                <button class="btn-circle"><i class="bi bi-grid-3x3-gap-fill"></i></button>
+                <button class="btn-circle"><i class="bi bi-messenger"></i></button>
+                <button class="btn-circle"><i class="bi bi-bell-fill"></i></button>
+                <img src="img/persona3.jpg" class="rounded-circle avatar-sm" alt="Perfil">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            
+            <div class="col-lg-3 d-none d-lg-block">
+                <div class="list-group list-group-flush">
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent text-white border-0 d-flex align-items-center gap-3">
+                        <img src="img/persona3.jpg" class="rounded-circle avatar-sm"> 
+                        <span class="fw-bold">Ana Fuentes</span>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent text-white border-0"><i class="bi bi-people-fill text-white me-3 fs-5"></i> Amigos</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent text-white border-0"><i class="bi bi-flag text-white me-3 fs-5"></i> Páginas</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent text-white border-0"><i class="bi bi-bookmark-fill text-white me-3 fs-5"></i> Grupos</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent text-white border-0"><i class="bi bi-shop text-white me-3 fs-5"></i> Marketplace</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent text-white border-0"><i class="bi bi-tv text-white me-3 fs-5"></i> Watch</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-transparent text-white border-0"><i class="bi bi-calendar text-white me-3 fs-5"></i> Eventos</a>
+                </div>
+                <hr class="text-secondary">
+                <small class="text-secondary">Privacidad · Condiciones · Publicidad · Cookies · Meta © 2023</small>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                
+                <div class="card bg-fb-dark text-white mb-3 shadow-sm border-0 w-50 mx-auto">
+                    <div class="card-body">
+                        <div class="d-flex gap-2 mb-3">
+                            <img src="img/persona3.jpg" class="rounded-circle avatar-sm">
+                            <input type="text" class="form-control search-input" placeholder="¿Qué estás pensando, Ana?">
+                        </div>
+                        <hr class="text-secondary my-2">
+                        <div class="d-flex justify-content-around">
+                            <button class="btn btn-link text-decoration-none text-secondary"><i class="bi bi-camera-video-fill text-danger"></i> Video</button>
+                            <button class="btn btn-link text-decoration-none text-secondary"><i class="bi bi-images text-success"></i> Foto</button>
+                            <button class="btn btn-link text-decoration-none text-secondary"><i class="bi bi-emoji-smile text-warning"></i> Sentimiento</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-fb-dark text-white mb-3 shadow-sm border-0 w-50 mx-auto">
+                    <div class="card-body pb-0">
+                        <div class="d-flex justify-content-between mb-2">
+                            <div class="d-flex gap-2">
+                                <img src="img/persona5.jpg" class="rounded-circle avatar-sm">
+                                <div>
+                                    <div class="fw-bold">Stephanie Doe</div>
+                                    <small class="text-secondary">1hr</small>
+                                </div>
+                            </div>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Paisaje increíble.</p>
+                    </div>
+                    <img src="img/paisaje1.jpg" class="card-img-top rounded-0" alt="Paisaje">
+                    
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between text-muted small mb-2">
+                            <span><i class="bi bi-heart-fill text-danger"></i> 60</span>
+                            <span class="text-secondary">7 comentarios</span>
+                        </div>
+                        <hr class="text-secondary my-2">
+                        <div class="d-flex justify-content-around">
+                            <button class="btn btn-link text-decoration-none text-secondary"><i class="bi bi-hand-thumbs-up"></i> Me gusta</button>
+                            <button class="btn btn-link text-decoration-none text-secondary"><i class="bi bi-chat"></i> Comentar</button>
+                            <button class="btn btn-link text-decoration-none text-secondary"><i class="bi bi-share"></i> Compartir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-fb-dark text-white mb-3 shadow-sm border-0 w-50 mx-auto">
+                    <div class="card-body pb-0">
+                        <div class="d-flex justify-content-between mb-2">
+                            <div class="d-flex gap-2">
+                                <img src="img/persona4.jpg" class="rounded-circle avatar-sm">
+                                <div>
+                                    <div class="fw-bold">Cesar Doe</div>
+                                    <small class="text-secondary">2hr</small>
+                                </div>
+                            </div>
+                            <i class="bi bi-three-dots"></i>
+                        </div>
+                        <p class="card-text">Un puente hacia la nada.</p>
+                    </div>
+                    <img src="img/paisaje2.jpg" class="card-img-top rounded-0" alt="Puente">
+                     <div class="card-body">
+                        <div class="d-flex justify-content-between text-muted small mb-2">
+                            <span><i class="bi bi-heart-fill text-danger"></i> 120</span>
+                            <span class="text-secondary">4 comentarios</span>
+                        </div>
+                        <hr class="text-secondary my-2">
+                        <div class="d-flex justify-content-around">
+                            <button class="btn btn-link text-decoration-none text-secondary"><i class="bi bi-hand-thumbs-up"></i> Me gusta</button>
+                            <button class="btn btn-link text-decoration-none text-secondary"><i class="bi bi-chat"></i> Comentar</button>
+                            <button class="btn btn-link text-decoration-none text-secondary"><i class="bi bi-share"></i> Compartir</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-lg-3 d-none d-lg-block">
+                <h6 class="text-secondary">Publicidad</h6>
+                <div class="card bg-fb-dark border-0 mb-3">
+                    <img src="img/ad2.jpg" class="card-img-top rounded" alt="Ad">
+                    <img src="img/ad1.jpg" class="card-img-top rounded" alt="Ad">
+                </div>
+
+                <hr class="text-secondary">
+                
+                <h6 class="text-secondary mb-3">Contactos</h6>
+                
+                <ul class="list-unstyled">
+                    <li class="d-flex align-items-center gap-3 mb-2 p-2 rounded hover-bg">
+                        <div class="position-relative">
+                            <img src="img/persona2.jpg" class="rounded-circle avatar-sm">
+                            <span class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-dark rounded-circle"></span>
+                        </div>
+                        <span>Alejandro Doe</span>
+                    </li>
+                     <li class="d-flex align-items-center gap-3 mb-2 p-2 rounded hover-bg">
+                        <div class="position-relative">
+                            <img src="img/persona5.jpg" class="rounded-circle avatar-sm">
+                            <span class="position-absolute bottom-0 start-100 translate-middle p-1 bg-success border border-dark rounded-circle"></span>
+                        </div>
+                        <span>Stephanie Doe</span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-2 p-2 rounded hover-bg">
+                        <div class="position-relative">
+                            <img src="img/persona4.jpg" class="rounded-circle avatar-sm">
+                            <span class="position-absolute bottom-0 start-100 translate-middle p-1 bg-secondary border border-dark rounded-circle"></span>
+                        </div>
+                        <span>Cesar Doe</span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-2 p-2 rounded hover-bg">
+                        <div class="position-relative">
+                            <img src="img/persona6.jpg" class="rounded-circle avatar-sm">
+                            <span class="position-absolute bottom-0 start-100 translate-middle p-1 bg-secondary border border-dark rounded-circle"></span>
+                        </div>
+                        <span>Manuel Doe</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
