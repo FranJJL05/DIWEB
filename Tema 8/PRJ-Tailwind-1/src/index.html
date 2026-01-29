@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Suscripción</title>
+    
+    <link rel="stylesheet" href="output.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen p-4">
+
+    <div class="flex flex-col md:flex-row bg-gray-800 rounded-2xl overflow-hidden shadow-2xl max-w-4xl w-full mx-auto">
+        
+        <div class="relative h-64 md:h-auto md:w-5/12 overflow-hidden group cursor-pointer bg-gray-800">
+            <img 
+                src="image.jpg" 
+                alt="Comida saludable" 
+                class="absolute inset-0 w-full h-full object-cover scale-90 transition-transform duration-500 ease-in-out group-hover:scale-110 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl"
+            >
+            <div class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-300 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl pointer-events-none"></div>
+        </div>
+
+        <div class="p-8 md:p-12 md:w-7/12 flex flex-col justify-center">
+            
+            <h2 class="text-white text-2xl md:text-3xl font-serif font-medium mb-3 leading-tight">
+                Recibe consejos de dieta y fitness en tu bandeja de entrada
+            </h2>
+            
+            <p class="text-gray-300 text-sm md:text-base mb-8 font-light">
+                Come mejor y haz ejercicio mejor. Suscríbete al boletín Diet&Fitness
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+                
+                <input 
+                    type="email" 
+                    placeholder="Inserta tu email" 
+                    class="w-full bg-gray-700/50 text-white placeholder-gray-400 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-lime-500 focus:ring-1 focus:ring-lime-500 transition-colors"
+                >
+                
+                <button class="bg-lime-600 hover:bg-lime-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 sm:w-auto w-full shadow-lg">
+                    Suscríbete
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
