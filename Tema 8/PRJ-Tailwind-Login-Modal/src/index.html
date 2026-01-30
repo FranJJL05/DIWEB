@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Práctica DAW</title>
+
+    <link href="./output.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Nunito:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-red-50 min-h-screen flex items-center justify-center p-4 font-sans">
+
+    <div
+        class="bg-white rounded-3xl shadow-2xl overflow-hidden max-w-5xl w-full flex flex-col md:flex-row relative min-h-[600px]">
+
+        <div class="w-full md:w-1/2 p-8 md:p-12 lg:p-16 z-10">
+
+            <h1 class="text-4xl font-bold text-gray-900 mb-4 font-serif">Log In</h1>
+
+            <p class="text-gray-500 mb-8">
+                Log in to your account to upload or download pictures, videos or music.
+            </p>
+
+            <form id="loginForm" novalidate>
+                <div class="mb-6">
+                    <input type="email" id="emailInput" placeholder="Enter your email address"
+                        class="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500 transition-colors">
+                    <p id="errorMessage" class="hidden text-red-500 text-sm mt-2 font-semibold">
+                        Incorrect email address
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-between mb-8">
+                    <a href="#" class="text-teal-600 hover:underline text-sm font-semibold">Forgot password</a>
+
+                    <button type="submit" class="bg-teal-700 text-white px-8 py-3 rounded-md flex items-center gap-2 
+                        hover:bg-opacity-90 hover:shadow-lg hover:-translate-y-0.5 transition duration-150">
+                        Next <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </form>
+
+            <div class="relative flex py-5 items-center">
+                <div class="flex-grow border-t border-gray-200"></div>
+                <span class="flex-shrink-0 mx-4 text-gray-400 text-sm">or log in with</span>
+                <div class="flex-grow border-t border-gray-200"></div>
+            </div>
+
+            <div class="flex gap-4 mt-2">
+                <button
+                    class="w-1/2 border border-gray-300 rounded-md py-2 flex items-center justify-center gap-2 text-gray-600
+                    hover:bg-blue-100 hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition duration-150">
+                    <i class="fa-brands fa-facebook text-blue-600 text-xl"></i> Facebook
+                </button>
+
+                <button
+                    class="w-1/2 border border-gray-300 rounded-md py-2 flex items-center justify-center gap-2 text-gray-600
+                    hover:bg-gray-100 hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition duration-150">
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" class="w-5 h-5" alt="Google"> Google
+                </button>
+            </div>
+        </div>
+
+        <div class="hidden md:block w-1/2 relative">
+
+            <img src="image.jpg" alt="Fondo lateral" class="absolute inset-0 w-full h-full object-cover z-0">
+
+            <button
+                class="absolute top-6 right-6 bg-white rounded-full w-8 h-8 flex items-center justify-center shadow-lg hover:scale-110 transition z-20">
+                <i class="fa-solid fa-xmark text-gray-600"></i>
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+        // (El script sigue igual)
+        const form = document.getElementById('loginForm');
+        const emailInput = document.getElementById('emailInput');
+        const errorMessage = document.getElementById('errorMessage');
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = emailInput.value;
+            if (!emailPattern.test(email)) {
+                errorMessage.classList.remove('hidden');
+                emailInput.classList.add('input-error');
+            } else {
+                errorMessage.classList.add('hidden');
+                emailInput.classList.remove('input-error');
+                alert("¡Login correcto!");
+            }
+        });
+
+        emailInput.addEventListener('input', () => {
+            if (errorMessage.classList.contains('hidden') === false) {
+                errorMessage.classList.add('hidden');
+                emailInput.classList.remove('input-error');
+            }
+        });
+    </script>
+</body>
+
+</html>
