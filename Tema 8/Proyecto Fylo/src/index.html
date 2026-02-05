@@ -1,0 +1,268 @@
+<!doctype html>
+<html class="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="./script.js" defer></script>
+    <title>Proyecto Fylo</title>
+</head>
+
+<body class="dark:bg-dark-blue dark:text-white">
+    <header class="container mx-auto mt-10 px-6 text-center h-40 md:h-20">
+        <!-- Logo -->
+        <div
+            class="bg-logo-light-mode dark:bg-logo-negro-mode md:absolute top-10 left-10 mx-auto h-20 w-48 bg-no-repeat md:mx-0">
+        </div>
+
+        <!-- Menu -->
+        <div class="flex items-center justify-center space-x-4 md:space-x-10 md:absolute top-12 right-10">
+            <a href="#funcionalidades" class="hover:text-cyan">Funcionalidades</a>
+            <a href="#testimonios" class="hover:text-cyan">Testimonios</a>
+
+            <button id="theme-toggle"
+                class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 rounded-lg text-sm p-2">
+                <!-- Icon Dark SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="moon-icon" class="w-5 h-5 hidden"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                </svg>
+
+                <!-- Icon Ligth SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" id="sun-icon" class="w-5 h-5 hidden"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sección Principal -->
+    <section class="bg-curvy-light-mode dark:bg-curvy-negro-mode bg-no-repeat bg-contain bg-bottom" id="principal">
+        <div class="container mx-auto px-6 text-center md:pt-20 pb-50">
+            <img src="./images/illustration-intro.png" alt="intro" class="mx-auto">
+            <h1 class="max-w-3xl mx-auto mb-10 text-3xl font-bold leading-normal mt-14 md:text-4xl">Todos tus archivos
+                en un lugar seguro, accesible desde cualquier lugar</h1>
+            <p class="max-w-sm mx-auto mb-10 text-sm md:max-w-xl md:text-lg">Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Necessitatibus, voluptatum! Beatae sed ipsa dolorum sequi nam sapiente earum autem
+                omnis facilis veniam, aspernatur aliquam ipsum neque illum, quam commodi quisquam?</p>
+
+            <button class="p-3 rounded-full w-52 bg-cyan transform hover:scale-90 duration-200">Comenzar</button>
+        </div>
+    </section>
+
+    <!-- Sección Funcionalidades -->
+    <section id="funcionalidades" class="pt-12 bg-gray-50 dark:bg-dark-blue-2">
+        <!-- Contenedor Funcionalidades -->
+        <div class="container mx-auto px-6 pb-32">
+            <!-- Primera Row -->
+            <div class="flex flex-col md:flex-row space-y-24 text-center md:span-y-10">
+                <!-- Item 1 -->
+                <div class="flex flex-col items-center space-y-2 md:w-1/2">
+                    <div class="flex h-24 mb-6 items-center justify-center">
+                        <img src="./images/icon-access-anywhere.svg" alt="" class="">
+                    </div>
+
+                    <h3 class="text-xl font-bold">Accede a tu archivo desde cualquier lugar</h3>
+                    <p class="max-w-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis qui quia aut sit
+                        vero adipisci alias praesentium labore facilis ullam.</p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex flex-col items-center space-y-2 md:w-1/2">
+                    <div class="flex h-24 mb-6 items-center justify-center">
+                        <img src="./images/icon-security.svg" alt="" class="">
+                    </div>
+
+                    <h3 class="text-xl font-bold">Accede a tu archivo desde cualquier lugar</h3>
+                    <p class="max-w-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis qui quia aut sit
+                        vero adipisci alias praesentium labore facilis ullam.</p>
+                </div>
+            </div>
+
+            <!-- Segunda Row -->
+            <div class="flex flex-col md:flex-row space-y-24 text-center md:span-y-00">
+                <!-- Item 1 -->
+                <div class="flex flex-col items-center space-y-2 md:w-1/2">
+                    <div class="flex h-24 mb-6 items-center justify-center">
+                        <img src="./images/icon-collaboration.svg" alt="" class="">
+                    </div>
+
+                    <h3 class="text-xl font-bold">Accede a tu archivo desde cualquier lugar</h3>
+                    <p class="max-w-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis qui quia aut sit
+                        vero adipisci alias praesentium labore facilis ullam.</p>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex flex-col items-center space-y-2 md:w-1/2">
+                    <div class="flex h-24 mb-6 items-center justify-center">
+                        <img src="./images/icon-any-file.svg" alt="" class="">
+                    </div>
+
+                    <h3 class="text-xl font-bold">Accede a tu archivo desde cualquier lugar</h3>
+                    <p class="max-w-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis qui quia aut sit
+                        vero adipisci alias praesentium labore facilis ullam.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Sección Productividad -->
+    <section id="productiva" class="bg-white dark:bg-dark-blue">
+        <!-- Contenedor Productividad -->
+        <div class="container flex flex-col md:flex-row items-center mx-auto pt-24 pb-32 mb:space-x-16">
+            <!-- Imagen -->
+            <div class="md:w-1/2">
+                <img src="./images/illustration-stay-productive.png" alt="" class="mb-10">
+            </div>
+
+            <!-- Contenido de la derecha -->
+            <div class="flex flex-col items-start md:w-1/2">
+                <div class="flex flex-col space-y-5">
+                    <h4 class="max-w-md text-xl font-bold md:text-4xl">Mantente productivo, estés donde estés</h4>
+                    <p class="text-md md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit
+                        dolorum impedit molestiae ratione mollitia?</p>
+                    <p class="text-md md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum odit
+                        dolorum impedit molestiae ratione mollitia?</p>
+                </div>
+
+                <!-- Link -->
+                <div class="block mt-4">
+                    <a href="#" class="border-b border-cyan text-cyan">Descubre cómo funciona Fylo <img
+                            src="./images/icon-arrow.svg" alt="" class="inline pb-2"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section class="bg-gray-50 dark:bg-dark-blue" id="testimonios">
+        <!-- Contenedor de los testimonios -->
+        <div class="container mx-auto px-6 pt-12 pb-80 md:pb-96">
+
+            <!-- Contenedor de las cajas -->
+            <div class="relative flex flex-col md:flex-row w-full space-y-6 md:space-y-0 md:space-x-12">
+                <!-- Imagen esquina -->
+                <img src="./images/bg-quotes.png" alt="" class="absolute left-1 -top-2 w-10 md:-top-16 md:w-20">
+
+                <!-- Caja 1 -->
+
+                <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 md:w-1/3 dark:bg-dark-blue-3">
+                    <p class="text-sm leading-5 md:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Consectetur dignissimos mollitia unde explicabo soluta corporis.</p>
+
+                    <!-- Imagen redonda -->
+                    <div class="flex space-x-4">
+                        <img src="./images/profile-1.jpg" alt="" class="rounded-full w-10 h-10">
+                        <div>
+                            <h5 class="text-sm font-semibold">Satish Patel</h5>
+                            <p class="text-sm font-extralight">Founder & CEO. Hunddle</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 md:w-1/3 dark:bg-dark-blue-3">
+                    <p class="text-sm leading-5 md:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Consectetur dignissimos mollitia unde explicabo soluta corporis.</p>
+
+                    <!-- Imagen redonda -->
+                    <div class="flex space-x-4">
+                        <img src="./images/profile-2.jpg" alt="" class="rounded-full w-10 h-10">
+                        <div>
+                            <h5 class="text-sm font-semibold">Satish Patel</h5>
+                            <p class="text-sm font-extralight">Founder & CEO. Hunddle</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col p-10 space-y-6 rounded-lg bg-gray-100 md:w-1/3 dark:bg-dark-blue-3">
+                    <p class="text-sm leading-5 md:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Consectetur dignissimos mollitia unde explicabo soluta corporis.</p>
+
+                    <!-- Imagen redonda -->
+                    <div class="flex space-x-4">
+                        <img src="./images/profile-3.jpg" alt="" class="rounded-full w-10 h-10">
+                        <div>
+                            <h5 class="text-sm font-semibold">Satish Patel</h5>
+                            <p class="text-sm font-extralight">Founder & CEO. Hunddle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Formulario -->
+    <section id="formulario" class="relative px-6 md:px-0 dark:bg-dark-blue-2">
+        <div
+            class="relative -top-40 max-w-4xl p-10 px-6 space-y-6 text-center rounded-lg bg-gray-200 dark:bg-dark-blue-1 md:px-16 mx-auto">
+            <h5 class="text-2xl font-bold">Obtén acceso anticipado hoy</h5>
+            <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ea iusto voluptatibus
+                optio accusantium dolorum in, consequatur qui numquam sint?</p>
+
+            <!-- Contenedor del Input & Button -->
+            <div class="flex flex-col items-start space-y-6 md:flex-row md:space-y-0 md:space-x-6">
+                <div class="w-full">
+                    <input type="text"
+                        class="bg-white dark:placeholder-amber-800 dark:text-red-950 w-full px-10 py-3 rounded-full focus:outline-none"
+                        placeholder="email@example.com">
+                </div>
+                <button
+                    class="w-full px-6 p-3 bg-cyan rounded-full md:w-56 transform hover:scale-90 duration-200">Empieza
+                    gratis</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="bg-dark-blue-1 pt-10 pb-10">
+        <div class="text-white flex justify-around mx-auto align-items-center">
+            <div class="col">
+                <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-telephone-fill me-2" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg> +1-543-123-4567</div>
+                <div class="flex"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-envelope-at-fill me-2" viewBox="0 0 16 16">
+                        <path
+                            d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671" />
+                        <path
+                            d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791" />
+                    </svg>example@fylo.com</div>
+            </div>
+
+            <div class="row flex">
+                <div class="col mr-5">
+                    <p>About</p>
+                    <p class="mt-2">Jobs</p>
+                    <p class="mt-2">Press</p>
+                    <p class="mt-2">Blog</p>
+                </div>
+                <div class="col">
+                    <p>Contact Us</p>
+                    <p class="mt-2">Terms</p>
+                    <p class="mt-2">Privacity</p>
+                </div>
+            </div>
+
+            <div class="row flex">
+                <div class="ficon rounded ps-3 pe-2">
+                    <img src="./images/facebook.svg" alt="">
+                </div>
+                <div class="ficon rounded ps-3 pe-2">
+                    <img src="./images/twitter.svg" alt="">
+                </div>
+                <div class="ficon rounded ps-3 pe-2">
+                    <img src="./images/instagram.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

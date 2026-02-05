@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+    --color-violeta-moderado: hsl(263, 55%, 52%);
+    --color-azul-grisaceo-muy-oscuro: hsl(217, 19%, 35%);
+    --color-azul-negruzco-muy-oscuro: hsl(219, 29%, 14%);
+    --color-blanco: hsl(0, 0%, 100%);
+    --color-azul-grisaceo-claro: hsl(210, 46%, 95%);
+    --color-gris-claro: hsl(0, 0%, 81%);
+}
+
+.bg-comillas {
+    background-image: url('./img/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-position: top 35px right 80px;
+}
