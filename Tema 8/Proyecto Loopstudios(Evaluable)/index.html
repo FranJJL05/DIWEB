@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loopstudios Landing Page</title>
+    <link rel="stylesheet" href="./src/output.css">
+    <style>
+        /* Fonts */
+        .font-alata {
+            font-family: 'Alata', sans-serif;
+        }
+
+        .font-josefin {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        /* Background Images - Mobile Default */
+        .bg-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./src/images/mobile/image-hero.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .item-1 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/mobile/image-deep-earth.jpg');
+        }
+
+        .item-2 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/mobile/image-night-arcade.jpg');
+        }
+
+        .item-3 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/mobile/image-soccer-team.jpg');
+        }
+
+        .item-4 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/mobile/image-grid.jpg');
+        }
+
+        .item-5 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/mobile/image-from-above.jpg');
+        }
+
+        .item-6 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/mobile/image-pocket-borealis.jpg');
+        }
+
+        .item-7 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/mobile/image-curiosity.jpg');
+        }
+
+        .item-8 {
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/mobile/image-fisheye.jpg');
+        }
+
+        /* Background Images - Desktop Override */
+        @media (min-width: 768px) {
+            .bg-hero {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./src/images/desktop/image-hero.jpg');
+            }
+
+            .item-1 {
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/desktop/image-deep-earth.jpg');
+            }
+
+            .item-2 {
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/desktop/image-night-arcade.jpg');
+            }
+
+            .item-3 {
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/desktop/image-soccer-team.jpg');
+            }
+
+            .item-4 {
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/desktop/image-grid.jpg');
+            }
+
+            .item-5 {
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/desktop/image-from-above.jpg');
+            }
+
+            .item-6 {
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/desktop/image-pocket-borealis.jpg');
+            }
+
+            .item-7 {
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/desktop/image-curiosity.jpg');
+            }
+
+            .item-8 {
+                background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url('./src/images/desktop/image-fisheye.jpg');
+            }
+        }
+    </style>
+</head>
+
+<body class="font-alata text-black">
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative w-full h-screen min-h-[600px] mb-20 md:mb-32">
+        <!-- Background Container -->
+        <div class="absolute inset-0 bg-hero bg-no-repeat z-[-1]"></div>
+
+        <div
+            class="container-custom h-full flex flex-col justify-between pt-10 pb-20 md:pt-16 md:pb-52 text-white font-josefin">
+            <!-- Navbar -->
+            <nav class="flex items-center justify-between">
+                <!-- Logo -->
+                <img src="./src/images/logo.svg" alt="Loopstudios" class="z-50 h-6 md:h-8">
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 font-alata text-sm cursor-pointer font-bold">
+                    <div class="group relative">
+                        <a href="#" class="hover:text-white transition-colors duration-200">About</a>
+                        <span
+                            class="absolute -bottom-2 left-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:transition-all duration-300"></span>
+                        <span
+                            class="absolute -bottom-2 right-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:transition-all duration-300"></span>
+                    </div>
+                    <div class="group relative"><a href="#">Careers</a><span
+                            class="absolute -bottom-2 left-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:left-1/4 transition-all duration-300"></span>
+                    </div>
+                    <div class="group relative"><a href="#">Events</a><span
+                            class="absolute -bottom-2 left-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:left-1/4 transition-all duration-300"></span>
+                    </div>
+                    <div class="group relative"><a href="#">Products</a><span
+                            class="absolute -bottom-2 left-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:left-1/4 transition-all duration-300"></span>
+                    </div>
+                    <div class="group relative"><a href="#">Support</a><span
+                            class="absolute -bottom-2 left-1/2 w-0 h-0.5 bg-white group-hover:w-1/2 group-hover:left-1/4 transition-all duration-300"></span>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="block hamburger md:hidden focus:outline-none z-50">
+                    <img id="menu-icon" src="./src/images/icon-hamburger.svg" alt="Menu" class="w-6">
+                </button>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div id="menu"
+                class="fixed inset-0 bg-black z-40 flex-col items-start justify-center pl-6 space-y-6 uppercase text-2xl font-josefin hidden tracking-widest">
+                <a href="#" class="hover:text-gray-400">About</a>
+                <a href="#" class="hover:text-gray-400">Careers</a>
+                <a href="#" class="hover:text-gray-400">Events</a>
+                <a href="#" class="hover:text-gray-400">Products</a>
+                <a href="#" class="hover:text-gray-400">Support</a>
+            </div>
+
+            <!-- Hero Text -->
+            <div class="border-2 border-white p-6 md:p-10 w-fit mt-8 md:mt-0 mb-10 md:mb-32 uppercase leading-none">
+                <h2 class="text-[40px] md:text-7xl font-light">
+                    Impressive<br />Experiences<br />That Deliver
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="container-custom relative mb-20 md:mb-32">
+        <div class="flex flex-col md:flex-row">
+            <!-- Image (Responsive) -->
+            <div class="w-full md:w-2/3">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="./src/images/desktop/image-interactive.jpg">
+                    <img src="./src/images/mobile/image-interactive.jpg" alt="Interactive VR"
+                        class="w-full object-cover">
+                </picture>
+            </div>
+
+            <!-- Text Content -->
+            <div
+                class="bg-white md:absolute md:right-0 md:bottom-0 md:pl-20 md:pt-20 md:w-1/2 flex flex-col justify-center items-center md:items-start text-center md:text-left px-6">
+                <h2 class="text-3xl md:text-4xl font-josefin uppercase mt-10 md:mt-0 mb-6">
+                    The leader in <br> interactive VR
+                </h2>
+                <p class="text-gray-500 font-alata text-sm md:text-[15px] leading-relaxed">
+                    Founded in 2011, Loopstudios has been producing world-class virtual reality
+                    projects for some of the best companies around the globe. Our award-winning
+                    creations have transformed businesses through digital experiences that bind
+                    to their brand.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creations Grid Section -->
+    <section class="container-custom mb-20 md:mb-40">
+        <!-- Header -->
+        <div class="flex justify-center md:justify-between items-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-josefin uppercase">Our Creations</h2>
+            <button
+                class="hidden md:block py-2 px-10 tracking-[0.2em] uppercase border-2 border-black font-alata hover:bg-black hover:text-white transition duration-200">
+                See All
+            </button>
+        </div>
+
+        <!-- Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-white font-josefin uppercase text-2xl md:text-3xl">
+            <!-- Item 1 -->
+            <div class="group relative overflow-hidden cursor-pointer w-full h-[120px] md:h-[450px]">
+                <div
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110 item-1">
+                </div>
+                <div
+                    class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div
+                    class="absolute bottom-4 left-4 md:bottom-8 md:left-8 group-hover:text-black z-10 w-2/3 leading-none pointer-events-none">
+                    Deep <br> Earth
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="group relative overflow-hidden cursor-pointer w-full h-[120px] md:h-[450px]">
+                <div
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110 item-2">
+                </div>
+                <div
+                    class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div
+                    class="absolute bottom-4 left-4 md:bottom-8 md:left-8 group-hover:text-black z-10 w-2/3 leading-none pointer-events-none">
+                    Night <br> Arcade
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="group relative overflow-hidden cursor-pointer w-full h-[120px] md:h-[450px]">
+                <div
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110 item-3">
+                </div>
+                <div
+                    class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div
+                    class="absolute bottom-4 left-4 md:bottom-8 md:left-8 group-hover:text-black z-10 w-2/3 leading-none pointer-events-none">
+                    Soccer <br> Team VR
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="group relative overflow-hidden cursor-pointer w-full h-[120px] md:h-[450px]">
+                <div
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110 item-4">
+                </div>
+                <div
+                    class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div
+                    class="absolute bottom-4 left-4 md:bottom-8 md:left-8 group-hover:text-black z-10 w-2/3 leading-none pointer-events-none">
+                    The <br> Grid
+                </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="group relative overflow-hidden cursor-pointer w-full h-[120px] md:h-[450px]">
+                <div
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110 item-5">
+                </div>
+                <div
+                    class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div
+                    class="absolute bottom-4 left-4 md:bottom-8 md:left-8 group-hover:text-black z-10 w-2/3 leading-none pointer-events-none">
+                    From Up <br> Above VR
+                </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="group relative overflow-hidden cursor-pointer w-full h-[120px] md:h-[450px]">
+                <div
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110 item-6">
+                </div>
+                <div
+                    class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div
+                    class="absolute bottom-4 left-4 md:bottom-8 md:left-8 group-hover:text-black z-10 w-2/3 leading-none pointer-events-none">
+                    Pocket <br> Borealis
+                </div>
+            </div>
+            <!-- Item 7 -->
+            <div class="group relative overflow-hidden cursor-pointer w-full h-[120px] md:h-[450px]">
+                <div
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110 item-7">
+                </div>
+                <div
+                    class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div
+                    class="absolute bottom-4 left-4 md:bottom-8 md:left-8 group-hover:text-black z-10 w-2/3 leading-none pointer-events-none">
+                    The <br> Curiosity
+                </div>
+            </div>
+            <!-- Item 8 -->
+            <div class="group relative overflow-hidden cursor-pointer w-full h-[120px] md:h-[450px]">
+                <div
+                    class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110 item-8">
+                </div>
+                <div
+                    class="absolute inset-0 bg-white/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                </div>
+                <div
+                    class="absolute bottom-4 left-4 md:bottom-8 md:left-8 group-hover:text-black z-10 w-2/3 leading-none pointer-events-none">
+                    Make It <br> Fisheye
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Bottom Button -->
+        <div class="flex justify-center mt-10 md:hidden">
+            <button
+                class="py-2 px-10 tracking-[0.2em] uppercase border-2 border-black font-alata hover:bg-black hover:text-white transition duration-200">
+                See All
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container-custom flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <!-- Left (Logo + Nav) -->
+            <div class="flex flex-col space-y-6 md:space-y-6 items-center md:items-start">
+                <img src="./src/images/logo.svg" alt="Loopstudios" class="h-6">
+                <nav class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8 font-alata text-sm">
+                    <div class="group relative w-fit mx-auto md:mx-0"><a href="#"
+                            class="hover:border-b-2 border-white pb-1">About</a></div>
+                    <div class="group relative w-fit mx-auto md:mx-0"><a href="#"
+                            class="hover:border-b-2 border-white pb-1">Careers</a></div>
+                    <div class="group relative w-fit mx-auto md:mx-0"><a href="#"
+                            class="hover:border-b-2 border-white pb-1">Events</a></div>
+                    <div class="group relative w-fit mx-auto md:mx-0"><a href="#"
+                            class="hover:border-b-2 border-white pb-1">Products</a></div>
+                    <div class="group relative w-fit mx-auto md:mx-0"><a href="#"
+                            class="hover:border-b-2 border-white pb-1">Support</a></div>
+                </nav>
+            </div>
+
+            <!-- Right (Social + Copyright) -->
+            <div class="flex flex-col space-y-6 md:space-y-6 mt-10 md:mt-0 items-center md:items-end">
+                <div class="flex space-x-4">
+                    <!-- Social Icons (SVG) -->
+                    <a href="#" class="group"><img src="./src/images/icon-facebook.svg" alt="Facebook"
+                            class="h-6 pb-2 border-b-2 border-transparent group-hover:border-white"></a>
+                    <a href="#" class="group"><img src="./src/images/icon-twitter.svg" alt="Twitter"
+                            class="h-6 pb-2 border-b-2 border-transparent group-hover:border-white"></a>
+                    <a href="#" class="group"><img src="./src/images/icon-pinterest.svg" alt="Pinterest"
+                            class="h-6 pb-2 border-b-2 border-transparent group-hover:border-white"></a>
+                    <a href="#" class="group"><img src="./src/images/icon-instagram.svg" alt="Instagram"
+                            class="h-6 pb-2 border-b-2 border-transparent group-hover:border-white"></a>
+                </div>
+                <p class="text-gray-500 font-alata text-sm">
+                    © 2021 Loopstudios. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+
+            // Toggle icon
+            if (menu.classList.contains('flex')) {
+                menuIcon.src = './src/images/icon-close.svg';
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            } else {
+                menuIcon.src = './src/images/icon-hamburger.svg';
+                document.body.style.overflow = 'auto'; // Enable scrolling
+            }
+        });
+    </script>
+</body>
+
+</html>

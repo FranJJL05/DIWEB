@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300;400;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-alata: 'Alata', sans-serif;
+  --font-josefin: 'Josefin Sans', sans-serif;
+  
+  --color-dark-gray: hsl(0, 0%, 55%);
+  --color-very-dark-gray: hsl(0, 0%, 41%);
+}
+
+/* Custom utilities if needed */
+@utility container-custom {
+  @apply max-w-6xl mx-auto px-6;
+}
